@@ -2,7 +2,7 @@
 title: Viraj Parimi
 description: Personal Site
 baseurl: "/site" # the subpath of your site, e.g. /blog
-url: "https://viraj96.github.io/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "https://viraj96.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Viraj Parimi
