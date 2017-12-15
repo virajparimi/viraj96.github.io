@@ -6,20 +6,252 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Viraj Parimi</title>
+	<link rel="SHORTCUT ICON" href="/assets/img/favicon.ico" />
+	<link rel="icon" href="/assets/img/favicon.ico" type="image/ico" />
 	<meta name="description" content="Personal Site">
 	<link rel="stylesheet" href="/assets/css/main.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 </head>
+
+<style type="text/css">
+	hr.star-light, hr.star-primary {
+	  	margin: 25px auto 30px;
+	  	padding: 0;
+	  	max-width: 250px;
+	  	border: 0;
+	  	border-top: solid 5px;
+	  	text-align: center;
+	}
+
+	hr.star-light:after, hr.star-primary:after {
+	  	content: "\f005";
+	  	display: inline-block;
+	  	position: relative;
+	  	top: -.8em;
+	  	padding: 0 .25em;
+	  	font-family: FontAwesome;
+	  	font-size: 2em;
+	}
+
+	hr.star-light {
+	  	border-color: #000000;
+	}
+
+	hr.star-light:after {
+	  	color: #000000;
+	  	background-color: #ffffff;
+	}
+
+	hr.star-primary {
+	  	border-color: #2c3e50;
+	}
+
+	hr.star-primary:after {
+	  	color: #2c3e50;
+	  	background-color: #fff;
+	}
+	.portfolio .portfolio-item {
+	  	right: 0;
+	  	margin: 0 0 15px;
+	}
+
+	.portfolio .portfolio-item .portfolio-link {
+	  	display: block;
+	  	position: relative;
+	  	margin: 0 auto;
+	  	max-width: 1000px;
+	}
+
+	.portfolio .portfolio-item .portfolio-link .caption {
+	  	position: absolute;
+	  	width: 100%;
+	  	height: 100%;
+	  	opacity: 0;
+	  	background: rgba(24, 188, 156, .9);
+	  	-webkit-transition: all ease .5s;
+	  	-moz-transition: all ease .5s;
+	  	transition: all ease .5s;
+	}
+
+	.portfolio .portfolio-item .portfolio-link .caption:hover {
+	  	opacity: 1;
+	}
+
+	.portfolio .portfolio-item .portfolio-link .caption .caption-content {
+	  	position: absolute;
+	  	top: 50%;
+	  	width: 100%;
+	  	height: 20px;
+	  	margin-top: -12px;
+	  	text-align: center;
+	  	font-size: 20px;
+	  	color: #fff;
+	}
+
+	.portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+	  	margin-top: -12px;
+	}
+
+	.portfolio .portfolio-item .portfolio-link .caption .caption-content h3, .portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+	 	margin: 0;
+	}
+
+	@media(min-width:767px) {
+	  	.portfolio .portfolio-item {
+	    	margin: 0 0 30px;
+	  	}
+	}
+	a, a:hover, a:focus, a:active, a.active {
+	  	outline: 0;
+	  	color: #18bc9c;
+	}
+	.portfolio-modal .modal-content {
+	  	padding: 100px 0;
+	  	min-height: 100%;
+	  	border: 0;
+	  	border-radius: 0;
+	  	text-align: center;
+	  	background-clip: border-box;
+	  	-webkit-box-shadow: none;
+	  	box-shadow: none;
+	}
+
+	.portfolio-modal .modal-content h2 {
+	  	margin: 0;
+	  	font-size: 3em;
+	}
+
+	.portfolio-modal .modal-content img {
+	  	margin-bottom: 30px;
+	}
+
+	.portfolio-modal .modal-content .item-details {
+	 	margin: 30px 0;
+	}
+
+	.portfolio-modal .close-modal {
+	  	position: absolute;
+	  	top: 25px;
+	  	right: 25px;
+	  	width: 75px;
+	  	height: 75px;
+	  	background-color: transparent;
+	  	cursor: pointer;
+	}
+
+	.portfolio-modal .close-modal:hover {
+	 	opacity: .3;
+	}
+
+	.portfolio-modal .close-modal .lr {
+	 	z-index: 1051;
+	  	width: 1px;
+	  	height: 75px;
+	  	margin-left: 35px;
+	  	background-color: #2c3e50;
+	  	-webkit-transform: rotate(45deg);
+	  	-ms-transform: rotate(45deg);
+	  	transform: rotate(45deg);
+	}
+
+	.portfolio-modal .close-modal .lr .rl {
+	  	z-index: 1052;
+	  	width: 1px;
+	  	height: 75px;
+	 	background-color: #2c3e50;
+	  	-webkit-transform: rotate(90deg);
+	  	-ms-transform: rotate(90deg);
+	  	transform: rotate(90deg);
+	}
+
+	.portfolio-modal .modal-backdrop {
+	  	display: none;
+	  	opacity: 0;
+	}
+	/* The Modal (background) */
+	.modal {
+	    display: none; /* Hidden by default */
+	    position: fixed; /* Stay in place */
+	    z-index: 1; /* Sit on top */
+	    padding-top: 100px; /* Location of the box */
+	    left: 0;
+	    top: 0;
+	    width: 100%; /* Full width */
+	    height: 100%; /* Full height */
+	    overflow: auto; /* Enable scroll if needed */
+	    background-color: rgb(0,0,0); /* Fallback color */
+	    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	}
+
+	/* Modal Content (Image) */
+	.modal-content {
+	    margin: auto;
+	    display: block;
+	    width: 80%;
+	    max-width: 700px;
+	}
+
+	/* Caption of Modal Image (Image Text) - Same Width as the Image */
+	#caption {
+	    margin: auto;
+	    display: block;
+	    width: 80%;
+	    max-width: 700px;
+	    text-align: center;
+	    color: #ccc;
+	    padding: 10px 0;
+	    height: 150px;
+	}
+
+	/* Add Animation - Zoom in the Modal */
+	.modal-content, #caption { 
+	    animation-name: zoom;
+	    animation-duration: 0.6s;
+	}
+
+	@keyframes zoom {
+	    from {transform:scale(0)} 
+	    to {transform:scale(1)}
+	}
+
+	/* The Close Button */
+	.close {
+	    position: absolute;
+	    top: 15px;
+	    right: 35px;
+	    color: #f1f1f1;
+	    font-size: 40px;
+	    font-weight: bold;
+	    transition: 0.3s;
+	}
+
+	.close:hover,
+	.close:focus {
+	    color: #bbb;
+	    text-decoration: none;
+	    cursor: pointer;
+	}
+
+	/* 100% Image Width on Smaller Screens */
+	@media only screen and (max-width: 700px){
+	    .modal-content {
+	        width: 100%;
+	    }
+	}
+</style>
 
 <body>
 	<div id="particles-js">
 		<div class="header">
 		  <h1>
 			<span class="site-title">Viraj Parimi</span>
-			<span class="site-description">Personal Site</span>
+			<span class="site-description">Student</span>
 		  </h1>
 		  <div class="header-icons">
 			<a aria-label="Send email" href="mailto:parimi15068@iiitd.ac.in"><i class="icon fa fa-envelope"></i></a>
 			<a aria-label="My Github" target="_blank" href="https://github.com/viraj96"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+			<a aria-label="Download CV" href="/assets/CV.pdf"><i class="icon fa fa-file-pdf-o"></i></a>
 		  </div>
 		  <div class="header-links">
 			<a class="link" href="#about" data-scroll>About Me</a>
@@ -60,43 +292,191 @@
     		</div>
 		</div>
 	</section>
-
+	<hr class="star-light">
+	<div id="myModal" class="modal">
+	  	<span class="close">&times;</span>
+		<img class="modal-content" id="picture">
+		<div id="caption"></div>
+	</div>
 	<section id="projects">
 		<div class="user-details">
   			<h1> Featured Projects </h1>
 		</div>
 		<div class="user-projects">
-  			<div class="images-right">
-    			<img alt="mountains" src="/assets/img/mountains.jpg" />
-  			</div>
-  			<div class="contents">
-    			<h3> Project Title </h3>
+			<section class="portfolio">
+	  			<div class="portfolio-item" style="float: right; width: 48%;">
+	  				<a class="portfolio-link">
+	    				<div class="caption">
+	              			<div class="caption-content">
+	                			<i class="fa fa-search-plus fa-3x"></i>
+	              			</div>
+	            		</div>
+	    				<img id="first" alt="asphalt_retro" src="/assets/img/Asphalt_Retro.png" style="border-radius:25px; box-shadow: -10px 10px 10px #888888;"/>
+	    			</a>
+	  			</div>
+			</section>
+  			<div class="contents-left">
+    			<h3> Asphalt Retro </h3>
     			<ul>
-      				<li> Featured Skills</li>
+      				<li> SDL </li>
+      				<li> QuickCG </li>
     			</ul>
-    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    			<p>A simple game written in C++ SDL environment using QuickCG graphics library. Mimics the original Asphalt game.
     			</p>
-    			<a class="project-link" href="#">Check it out</a>
+    			<a class="project-link" href="https://github.com/viraj96/Profile/tree/master/Game">Check it out</a>
   			</div>
 		</div>
 		<div class="user-projects">
-  			<div class="images-left">
-		 	   <img alt="mountains" src="/assets/img/skate.jpg" />
-  			</div>
+			<section class="portfolio">
+	  			<div class="portfolio-item" style="float: left; width: 48%;">
+	  				<a class="portfolio-link">
+	    				<div class="caption">
+	              			<div class="caption-content">
+	                			<i class="fa fa-search-plus fa-3x"></i>
+	              			</div>
+	            		</div>
+	    				<img alt="smart_glasses" src="/assets/img/Smart_Glasses.png" style="border-radius:25px; box-shadow: 10px 10px 5px #888888;"/>
+	            	</a>
+	  			</div>
+			</section>
   			<div class="contents-right">
-    			<h3> Project Title </h3>
+    			<h3> Smart Glasses </h3>
     			<ul>
-      				<li> Featured Skills</li>
+      				<li> Open-CV </li>
+      				<li> Tesseract </li>
+      				<li> E-Speak </li>
     			</ul>
-    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    			<a class="project-link" href="#">Check it out</a>
+    			<p>A prototype to help blind people understand text in books and also allow them to identify people they already know in order to improve their life style. It was selected to be showcased at Delhi Mini Maker Faire.</p>
+    			<a class="project-link" href="https://github.com/viraj96/Smart_Glasses">Check it out</a>
+  			</div>
+		</div>
+		<div class="user-projects">
+			<section class="portfolio">
+	  			<div class="portfolio-item" style="float: right; width: 48%;">
+	  				<a class="portfolio-link">
+	    				<div class="caption">
+	              			<div class="caption-content">
+	                			<i class="fa fa-search-plus fa-3x"></i>
+	              			</div>
+	            		</div>
+	    				<img alt="private_tor_network" src="/assets/img/Private_Tor_Network.png" style="border-radius:25px; box-shadow: -10px 10px 10px 5px #888888;"/>
+	            	</a>
+	  			</div>
+			</section>
+  			<div class="contents-left">
+    			<h3> Private Tor Network </h3>
+    			<ul>
+      				<li> Tor </li>
+      				<li> Network Administration </li>
+    			</ul>
+    			<p>Created a private Tor network and were able to demonstrate seamless talk between relays and DA. Helped to understand intricacies of Tor.</p>
+    			<a class="project-link" href="https://github.com/viraj96/Private-Tor-Network">Check it out</a>
+  			</div>
+		</div>
+		<div class="user-projects">
+			<section class="portfolio">
+	  			<div class="portfolio-item" style="float: left; width: 48%;">
+	  				<a class="portfolio-link">
+	    				<div class="caption">
+	              			<div class="caption-content">
+	                			<i class="fa fa-search-plus fa-3x"></i>
+	              			</div>
+	            		</div>
+	    				<img alt="nbdc_data_analyser" src="/assets/img/NBDC_Data_Analyser.png" style="border-radius:10px; box-shadow: 10px 10px 5px #888888; height: 17em;"/>
+	            	</a>
+	  			</div>
+			</section>
+  			<div class="contents-right">
+    			<h3> NBDC Data Analyser </h3>
+    			<ul>
+      				<li> Django </li>
+      				<li> PostgreSQL </li>
+      				<li> D3.js </li>
+    			</ul>
+    			<p>Working on a project of National Bomb Data Center which comes under NSG(National Security Guards) to help them analyse bomb data. It is currently installed at their headquarters.</p>
+  			</div>
+		</div>
+		<div class="user-projects">
+			<section class="portfolio">
+	  			<div class="portfolio-item" style="float: right; width: 48%;">
+	  				<a class="portfolio-link">
+	    				<div class="caption">
+	              			<div class="caption-content">
+	                			<i class="fa fa-search-plus fa-3x"></i>
+	              			</div>
+	            		</div>
+	    				<img alt="reinforcement_learning" src="/assets/img/Reinforcement_Learning.gif" style="border-radius:20px; box-shadow: -7px 10px 10px 5px #888888; width: 15em; "/>
+	            	</a>
+	  			</div>
+			</section>
+  			<div class="contents-left">
+    			<h3> Reinforcement Learning </h3>
+    			<ul>
+      				<li> Tensorflow </li>
+      				<li> OpenAI Gym </li>
+      				<li> Arcade Learning Environment </li>
+    			</ul>
+    			<p>Implemented reinforcement learning algorithms and understanding how they work. Also worked on finding ways to improve how the algorithm works and improves with time.</p>
+    			<a class="project-link" href="https://github.com/divyanshu-talwar/Reinforcement-Learning">Check it out</a>
+  			</div>
+		</div>
+		<div class="user-projects">
+			<section class="portfolio">
+	  			<div class="portfolio-item" style="float: left; width: 48%;">
+	  				<a class="portfolio-link">
+	    				<div class="caption">
+	              			<div class="caption-content">
+	                			<i class="fa fa-search-plus fa-3x"></i>
+	              			</div>
+	            		</div>
+	    				<img alt="github_recommender_system" src="/assets/img/Github_Recommender_System.png" style="border-radius:25px; box-shadow: 10px 10px 5px #888888;"/>
+	            	</a>
+	  			</div>
+			</section>
+  			<div class="contents-right">
+    			<h3> Github Recommender System </h3>
+    			<ul>
+      				<li> Autoencoders </li>
+      				<li> Collaborative Filtering </li>
+      				<li> Data Collection </li>
+    			</ul>
+    			<p>Developed a recommender system similar to Amazon/Flipkart for Github where users are provided with good repositories for working on. Aim is to promote open source culture. Obtained a recall score of 0.72</p>
+    			<a class="project-link" href="https://github.com/divyanshu-talwar/Github-Recommender-System">Check it out</a>
   			</div>
 		</div>
 	</section>
-
+	<hr class="star-light">
+	<section id="projects">
+		<div class="user-details">
+  			<h1> B.Tech Project </h1>
+		</div>
+		<div class="user-projects">
+			<section class="portfolio">
+	  			<div class="portfolio-item" style="float: right; width: 48%;">
+	  				<a class="portfolio-link">
+	    				<div class="caption">
+	              			<div class="caption-content">
+	                			<i class="fa fa-search-plus fa-3x"></i>
+	              			</div>
+	            		</div>
+	    				<img alt="btech_project" src="/assets/img/BTech_Project.png" style="border-radius:25px; box-shadow: -10px 10px 10px 5px #888888; height: 20em;"/>
+	            	</a>
+	  			</div>
+			</section>
+  			<div class="contents-right">
+    			<h3> Understanding Vulnerability of Communities in Complex Networks </h3>
+    			<ul>
+      				<li> Graph Theory </li>
+      				<li> Community Detection </li>
+      				<li> Complex Networks </li>
+    			</ul>
+    			<p>Working on a NP-Hard problem trying to identify vulnerable nodes in a complex network. Involves communitydetection and heuristic based approach in order to meet the optimal result</p>
+    			<a class="project-link" href="https://github.com/viraj96/Community-Vulnerability">Check it out</a>
+  			</div>
+		</div>
+	</section>
 	<footer class="footer">
 	    <p>&copy; Viraj Parimi</p>
-    	<p>Built with Jekyll</p>
 	</footer>
 
 <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -111,7 +491,22 @@
 		ga('create', 'UA-110955894-1', 'auto');
 		ga('send', 'pageview');
 </script>
-{% endif %}
-
+<script type="text/javascript">
+	var modal = document.getElementById('myModal');
+	var modalImage = document.getElementById("picture");
+	var captionText = document.getElementById("caption");
+	$(function() {
+    	$('a.portfolio-link').on('click', function() {
+    		var image = jQuery(this).find("img")[0];
+			modal.style.display = "block";
+		    modalImage.src = image.src;
+		    captionText.innerHTML = image.alt;
+		});
+	});
+	var span = document.getElementsByClassName("close")[0];
+	span.onclick = function() { 
+	  	modal.style.display = "none";
+	}
+</script>
 
 </body>
