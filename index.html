@@ -12,6 +12,9 @@
 	<link rel="stylesheet" href="/assets/css/main.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script type="text/javascript" src="asteroidsHome.js"></script>
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.play.js"></script>
 </head>
 
 <style type="text/css">
@@ -242,25 +245,26 @@
 </style>
 
 <body>
-	<div id="particles-js">
-		<div class="header">
-		  <h1>
-			<span class="site-title">Viraj Parimi</span>
-			<span class="site-description">Student</span>
-		  </h1>
-		  <div class="header-icons">
-			<a aria-label="Send email" href="mailto:parimi15068@iiitd.ac.in"><i class="icon fa fa-envelope"></i></a>
-			<a aria-label="My Github" target="_blank" href="https://github.com/viraj96"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
-			<a aria-label="Download CV" href="/assets/CV.pdf"><i class="icon fa fa-file-pdf-o"></i></a>
-		  </div>
-		  <div class="header-links">
-			<a class="link" href="#about" data-scroll>About Me</a>
-			<a class="link" href="#projects" data-scroll>Projects</a>
-		  </div>
-	  </div>
-	  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+	<div id="bgCanvas" style="z-index: -2; top:0px; left:0px;">
 	</div>
-
+	<div>
+		<div class="header">
+		  	<h1>
+				<span class="site-title">Viraj Parimi</span>
+				<span class="site-description">Student</span>
+		  	</h1>
+		  	<div class="header-icons">
+				<a aria-label="Send email" href="mailto:parimi15068@iiitd.ac.in"><i class="icon fa fa-envelope"></i></a>
+				<a aria-label="My Github" target="_blank" href="https://github.com/viraj96"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+				<a aria-label="Download CV" href="/assets/CV.pdf"><i class="icon fa fa-file-pdf-o"></i></a>
+		  	</div>
+		  	<div class="header-links">
+				<a class="link" href="#about" data-scroll>About Me</a>
+				<a class="link" href="#projects" data-scroll>Projects</a>
+		  	</div>
+	  	</div>
+	  	<a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+	</div>
 	<section id="about">
 		<div class="user-details">
   			<h1> My Expertise </h1>
@@ -444,6 +448,32 @@
     			<a class="project-link" href="https://github.com/divyanshu-talwar/Github-Recommender-System">Check it out</a>
   			</div>
 		</div>
+		<div class="user-projects">
+			<section class="portfolio">
+	  			<div class="portfolio-item" style="float: right; width: 48%;">
+	  				<a class="portfolio-link">
+	    				<div class="caption">
+	              			<div class="caption-content">
+	                			<i class="fa fa-search-plus fa-3x"></i>
+	              			</div>
+	            		</div>
+	    				<img alt="zomby_survival" src="/assets/img/Zomby_Survival.png" style="border-radius:20px; box-shadow: -7px 10px 10px 5px #888888;"/>
+	            	</a>
+	  			</div>
+			</section>
+  			<div class="contents-left">
+    			<h3> Zomby_Survival </h3>
+    			<ul>
+      				<li> Processing </li>
+      				<li> Javascript </li>
+    			</ul>
+    			<p>Implemented a game using Processing. Ported it to javascript using p5js and even used OOP structure provided by JS!.</p>
+    			<span>
+    				<a class="project-link" href="https://github.com/viraj96/Zomby_Survival" style="display: inline;">Check it out</a>
+    				<a class="project-link" href="./Zomby_Survival/index.html" style="display: inline;">Run it</a>
+    			</span>
+  			</div>
+		</div>
 	</section>
 	<hr class="star-light">
 	<section id="projects">
@@ -479,9 +509,9 @@
 	    <p>&copy; Viraj Parimi</p>
 	</footer>
 
-<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<!-- <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
 <script src="/assets/js/sweet-scroll.min.js"></script>
-<script src="/assets/js/main.js"></script>
+<!-- <script src="/assets/js/main.js"></script> -->
 <!-- Google Analytics -->
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
