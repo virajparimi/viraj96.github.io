@@ -20,6 +20,7 @@
 	<link rel="icon" href="/assets/img/favicon.ico" type="image/ico" />
 	<meta name="description" content="Personal Site">
 	<link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 	<script type="text/javascript" src="asteroidsHome.js"></script>
@@ -264,8 +265,9 @@
 				<span class="site-description">Graduate Research Assistant</span>
 		  	</h1>
 		  	<div class="header-icons">
-				<a aria-label="Send email" href="mailto:parimi15068@iiitd.ac.in"><i class="icon fa fa-envelope"></i></a>
+				<a aria-label="Send email" href="mailto:vparimi@cs.cmu.edu"><i class="icon fa fa-envelope"></i></a>
 				<a aria-label="My Github" target="_blank" href="https://github.com/viraj96"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+				<a aria-label="Google Scholar" target="_blank" href="https://scholar.google.com/citations?user=Uj2A2ywAAAAJ&hl=en"><i class="icon ai ai-google-scholar-square" aria-hidden="true"></i></a>
 				<a aria-label="Download CV" href="/assets/CV.pdf"><i class="icon fa fa-file-pdf-o"></i></a>
 		  	</div>
 		  	<div class="header-links">
@@ -274,6 +276,7 @@
 				<a class="link" href="#publications" data-scroll>Publications</a>
 				<a class="link" href="#projects" data-scroll>Projects</a>
 				<a class="link" href="#fun" data-scroll>Fun</a>
+				<a class="link" href="#game" data-scroll>Game</a>
 		  	</div>
 	  	</div>
 	  	<a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -307,15 +310,7 @@
 		</div>
 	</section>
 	<hr class="star-light">
-	<div id="myModal" class="modal">
-	  	<span class="close">&times;</span>
-		<img class="modal-content" id="picture">
-		<div id="caption"></div>
-	</div>
-	<section id="research">
-		<div class="user-details">
-  			<h1> Research Projects </h1>
-		</div>
+	<section id="research" style="display: flex; flex-direction: column; justify-content: space-between; width: 90%; max-width: 960px; margin: 0 auto;">
 		<div class="user-projects">
 			<section class="portfolio">
 	  			<div class="portfolio-item" style="float: right; width: 48%;">
@@ -325,11 +320,11 @@
 	                			<i class="fa fa-search-plus fa-3x"></i>
 	              			</div>
 	            		</div>
-	    				<img alt="masters_project" src="/assets/img/MSR_Project.gif" style="border-radius:25px; box-shadow: -10px 10px 10px #888888;"/>
+	    				<img alt="masters_project" src="/assets/img/MSR_Project.gif" style="border-radius:25px; box-shadow: 10px 10px 10px #888888;"/>
 	            	</a>
 	  			</div>
 			</section>
-  			<div class="contents-right">
+  			<div class="contents-left">
                 <h3> Planning under Uncertainty for <br> Multi-Robot Coordination  </h3>
     			<ul>
       				<li> Task Planning </li>
@@ -348,7 +343,7 @@
 	                			<i class="fa fa-search-plus fa-3x"></i>
 	              			</div>
 	            		</div>
-	    				<img alt="btech_project" src="/assets/img/BTech_Project.png" style="border-radius:25px; box-shadow: 10px 10px 10px 5px #888888;"/>
+	    				<img alt="btech_project" src="/assets/img/BTech_Project.png" style="border-radius:25px; box-shadow: -10px 10px 10px 5px #888888; height: 20em;"/>
 	            	</a>
 	  			</div>
 			</section>
@@ -364,6 +359,40 @@
   			</div>
 		</div>
 	</section>
+	<hr class="star-light">
+	<section id="publications" style="display: flex; flex-direction: column; justify-content: space-between; width: 90%; max-width: 960px; margin: 0 auto;">
+		<div class="user-details">
+            <h1> Publications </h1>
+		</div>
+        <div class="contents-left" style="margin-bottom:-40px;">
+            <h4> [1] A Computationally Scalable Bayesian Sequential Learning Framework for Time-Series Forecasting 
+            </h4>
+            <h5 style="margin-top:-15px; margin-bottom:-20px; margin-left:20px;"> <b>Viraj Parimi</b>, Isaac Isukapati, Stephen F. Smith </h5>
+            <h6 style="margin-left:20px;"> Under Review, 2021 </h6>
+        </div>
+        <div class="contents-left" style="margin-bottom:-40px;">
+            <h4> [2] <a href="https://ieeexplore.ieee.org/abstract/document/9042883">
+                Hierarchical Bayesian Framework for Bus Dwell Time Prediction
+            </a> </h4>
+            <h5 style="margin-top:-15px; margin-bottom:-20px; margin-left:20px;"> Isaac Isukapati, Conor Igoe, Eli Bronstein, <b>Viraj Parimi</b>, Stephen F. Smith </h5>
+            <h6 style="margin-left:20px;"> IEEE Transactions on Intelligent Transportation Systems, 2020 </h6>
+        </div>
+        <div class="contents-left" style="margin-bottom:-40px;">
+            <h4> [3] <a href="https://arxiv.org/abs/1906.05238"> 
+                    Understanding Vulnerability of Communities in Complex Networks
+            </a> </h4>
+            <h5 style="margin-top:-15px; margin-bottom:-20px; margin-left:20px;"> <b>Viraj Parimi</b>, Arindam Pal, Sushmita Ruj, Ponnurangam Kumaraguru, Tanmoy Chakraborty </h5>
+            <h6 style="margin-left:20px;"> Arxiv Preprint, 2019 </h6>
+        </div>
+        <div class="contents-left">
+            <h4> [4] <a href="https://riss.ri.cmu.edu/wp-content/uploads/2018/11/RISS_Journal_Nov26-r.pdf">
+                    Analysis of DSRC accuracy for pedestrian localization
+            </a> </h5>
+            <h5 style="margin-top:-15px; margin-bottom:-20px; margin-left:20px;"> Aidan Lakshman, <b>Viraj Parimi</b>, Stephen F. Smith, Isaac Isukapati </h5>
+            <h6 style="margin-left:20px;"> RISS Working Papers Journal, 2018 </h6>
+        </div>
+    </section>
+	<hr class="star-light">
 	<section id="projects">
 		<div class="user-details">
             <h1> Featured Projects </h1>
@@ -377,19 +406,18 @@
 	                			<i class="fa fa-search-plus fa-3x"></i>
 	              			</div>
 	            		</div>
-	    				<img id="first" alt="asphalt_retro" src="/assets/img/Asphalt_Retro.png" style="border-radius:25px; box-shadow: -10px 10px 10px #888888;"/>
+	    				<img alt="sample_based_planning" src="/assets/img/Planning.png" style="border-radius:25px; box-shadow: 10px 10px 10px #888888; height:300px;"/>
 	    			</a>
 	  			</div>
 			</section>
   			<div class="contents-left">
-    			<h3> Asphalt Retro </h3>
+                <h3> Sampling-based Planning under <br> Discrete Space </h3>
     			<ul>
-      				<li> SDL </li>
-      				<li> QuickCG </li>
+      				<li> C++ </li>
+      				<li> MEX </li>
     			</ul>
-    			<p>A simple game written in C++ SDL environment using QuickCG graphics library. Mimics the original Asphalt game.
+    			<p>Proposed a hierarchical decomposition algorithm where we discretize the continuous sample space of PRM/RRT algorithms in order to provide tighter completeness guarantees. Demonstrated the performance improvement of the proposed approach for 6-link robotic arm.
     			</p>
-    			<a class="project-link" href="https://github.com/viraj96/Profile/tree/master/Game">Check it out</a>
   			</div>
 		</div>
 		<div class="user-projects">
@@ -401,19 +429,18 @@
 	                			<i class="fa fa-search-plus fa-3x"></i>
 	              			</div>
 	            		</div>
-	    				<img alt="smart_glasses" src="/assets/img/Smart_Glasses.png" style="border-radius:25px; box-shadow: 10px 10px 5px #888888;"/>
+	    				<img alt="lossy_compression" src="/assets/img/Lossy_Compression.png" style="border-radius:25px; box-shadow: -10px 10px 5px #888888;"/>
 	            	</a>
 	  			</div>
 			</section>
   			<div class="contents-right">
-    			<h3> Smart Glasses </h3>
+    			<h3> Lossy Compression using Neural Networks </h3>
     			<ul>
-      				<li> Open-CV </li>
-      				<li> Tesseract </li>
-      				<li> E-Speak </li>
+      				<li> Keras </li>
+      				<li> MLP/CNN/LSTM </li>
     			</ul>
-    			<p>A prototype to help blind people understand text in books and also allow them to identify people they already know in order to improve their life style. It was selected to be showcased at Delhi Mini Maker Faire.</p>
-    			<a class="project-link" href="https://github.com/viraj96/Smart_Glasses">Check it out</a>
+    			<p>Formulated quantization techniques to generate discrete latent space representations among image and textbased autoencoder models without significant performance implications. Showcased that incorporating commit-loss to the learning process improved the compression ratio of both imageand text based models while maintaining the quality of reconstructions.</p>
+    			<a class="project-link" href="https://github.com/divamgupta/dnn_lossy_compression">Check it out</a>
   			</div>
 		</div>
 		<div class="user-projects">
@@ -425,18 +452,20 @@
 	                			<i class="fa fa-search-plus fa-3x"></i>
 	              			</div>
 	            		</div>
-	    				<img alt="private_tor_network" src="/assets/img/Private_Tor_Network.png" style="border-radius:25px; box-shadow: -10px 10px 10px 5px #888888;"/>
-	            	</a>
+	    				<img alt="autonomous_driving" src="/assets/img/Autonomous_Driving.gif" style="border-radius:25px; box-shadow: 10px 10px 10px #888888; height:300px;"/>
+	    			</a>
 	  			</div>
 			</section>
   			<div class="contents-left">
-    			<h3> Private Tor Network </h3>
+                <h3> Autonomous Driving using CNNs </h3>
     			<ul>
-      				<li> Tor </li>
-      				<li> Network Administration </li>
+      				<li> Keras </li>
+      				<li> CNN </li>
+      				<li> Unreal Engine </li>
     			</ul>
-    			<p>Created a private Tor network and were able to demonstrate seamless talk between relays and DA. Helped to understand intricacies of Tor.</p>
-    			<a class="project-link" href="https://github.com/viraj96/Private-Tor-Network">Check it out</a>
+                <p> Trained a custom CNN model on simulated data generated form Unreal Engines' Blocks environment. Demonstrated the efficacy of the model to steer the environment autonomously via control inputs given by the model.
+    			</p>
+    			<a class="project-link" href="https://github.com/viraj96/Autonomous-Driving-Simulation">Check it out</a>
   			</div>
 		</div>
 		<div class="user-projects">
@@ -448,42 +477,42 @@
 	                			<i class="fa fa-search-plus fa-3x"></i>
 	              			</div>
 	            		</div>
-	    				<img alt="nbdc_data_analyser" src="/assets/img/NBDC_Data_Analyser.png" style="border-radius:10px; box-shadow: 10px 10px 5px #888888; height: 17em;"/>
+	    				<img alt="nirf" src="/assets/img/NIRF.png" style="border-radius:25px; box-shadow: -10px 10px 5px #888888; height:20em;"/>
 	            	</a>
 	  			</div>
 			</section>
   			<div class="contents-right">
-    			<h3> NBDC Data Analyser </h3>
+    			<h3> Classification for Research Universities in India </h3>
     			<ul>
-      				<li> Django </li>
-      				<li> PostgreSQL </li>
-      				<li> D3.js </li>
+      				<li> Python </li>
+      				<li> Machine Learning </li>
     			</ul>
-    			<p>Working on a project of National Bomb Data Center which comes under NSG(National Security Guards) to help them analyse bomb data. It is currently installed at their headquarters.</p>
+                <p>Worked on an extended classification approach for research universities in India, based on the Carnegie classification approach. Proposed a simple basic criterion for identifying research universities depending on factors such as research funding, number of faculty members etc.</p>
+    			<a class="project-link" href="https://link.springer.com/article/10.1007/s10734-019-00406-3#:~:text=the%20number%20of%20PhD%20students<Plug>PeepOpener%2Dcapita%20level%20of%20research.">Check it out</a>
   			</div>
 		</div>
 		<div class="user-projects">
 			<section class="portfolio">
-	  			<div class="portfolio-item" style="float: right; width: 48%;">
+	  			<div class="portfolio-item" style="float: right; width: 48%; padding-left:50px;">
 	  				<a class="portfolio-link">
 	    				<div class="caption">
 	              			<div class="caption-content">
 	                			<i class="fa fa-search-plus fa-3x"></i>
 	              			</div>
 	            		</div>
-	    				<img alt="reinforcement_learning" src="/assets/img/Reinforcement_Learning.gif" style="border-radius:20px; box-shadow: -7px 10px 10px 5px #888888; width: 15em; "/>
-	            	</a>
+	    				<img alt="amorphous_tf" src="/assets/img/Amorphous_TF.png" style="border-radius:25px; box-shadow: 10px 10px 10px #888888; height:300px;"/>
+	    			</a>
 	  			</div>
 			</section>
   			<div class="contents-left">
-    			<h3> Reinforcement Learning </h3>
+                <h3> Amorphous Tensorflow </h3>
     			<ul>
+      				<li> C++ </li>
       				<li> Tensorflow </li>
-      				<li> OpenAI Gym </li>
-      				<li> Arcade Learning Environment </li>
+      				<li> Work Stealing </li>
     			</ul>
-    			<p>Implemented reinforcement learning algorithms and understanding how they work. Also worked on finding ways to improve how the algorithm works and improves with time.</p>
-    			<a class="project-link" href="https://github.com/divyanshu-talwar/Reinforcement-Learning">Check it out</a>
+                <p> Worked on developing a work-stealing runtime for Tensorflow where depending on the load on the GPU, the worker threads would be executed to offload some work to the CPU for faster execution of tasks.
+    			</p>
   			</div>
 		</div>
 		<div class="user-projects">
@@ -495,81 +524,30 @@
 	                			<i class="fa fa-search-plus fa-3x"></i>
 	              			</div>
 	            		</div>
-	    				<img alt="github_recommender_system" src="/assets/img/Github_Recommender_System.png" style="border-radius:25px; box-shadow: 10px 10px 5px #888888;"/>
+	    				<img alt="parallel_dfs" src="/assets/img/Parallel_DFS.jpg" style="border-radius:25px; box-shadow: -10px 10px 5px #888888; height:300px;"/>
 	            	</a>
 	  			</div>
 			</section>
   			<div class="contents-right">
-    			<h3> Github Recommender System </h3>
+    			<h3> Parallel Depth First Search </h3>
     			<ul>
-      				<li> Autoencoders </li>
-      				<li> Collaborative Filtering </li>
-      				<li> Data Collection </li>
+      				<li> CUDA </li>
+      				<li> nvvp </li>
     			</ul>
-    			<p>Developed a recommender system similar to Amazon/Flipkart for Github where users are provided with good repositories for working on. Aim is to promote open source culture. Obtained a recall score of 0.72</p>
-    			<a class="project-link" href="https://github.com/divyanshu-talwar/Github-Recommender-System">Check it out</a>
+    			<p>Implemented a parallel version of the popular Depth First Search algorithm which is by nature non-serializable, written entirely in CUDA and showed significant performance improvement over the serial version over large graphs.</p>
+    			<a class="project-link" href="https://github.com/divyanshu-talwar/Parallel-DFS">Check it out</a>
   			</div>
 		</div>
 		<div class="user-projects">
 			<section class="portfolio">
-	  			<div class="portfolio-item" style="float: right; width: 48%;">
+	  			<div class="portfolio-item" style="float: right; width: 48%; padding-left:10px;">
 	  				<a class="portfolio-link">
 	    				<div class="caption">
 	              			<div class="caption-content">
 	                			<i class="fa fa-search-plus fa-3x"></i>
 	              			</div>
 	            		</div>
-	    				<img alt="zomby_survival" src="/assets/img/Zomby_Survival.png" style="border-radius:20px; box-shadow: -7px 10px 10px 5px #888888;"/>
-	            	</a>
-	  			</div>
-			</section>
-  			<div class="contents-left">
-    			<h3> Zomby_Survival </h3>
-    			<ul>
-      				<li> Processing </li>
-      				<li> Javascript </li>
-    			</ul>
-    			<p>Implemented a game using Processing. Ported it to javascript using p5js and even used OOP structure provided by JS!.</p>
-    			<span>
-    				<a class="project-link" href="https://github.com/viraj96/Zomby_Survival" style="display: inline;">Check it out</a>
-    				<a class="project-link" href="./Zomby_Survival/index.html" style="display: inline;">Run it</a>
-    			</span>
-  			</div>
-		</div>
-		<div class="user-projects">
-			<section class="portfolio">
-	  			<div class="portfolio-item" style="float: left; width: 48%;">
-	  				<a class="portfolio-link">
-	    				<div class="caption">
-	              			<div class="caption-content">
-	                			<i class="fa fa-search-plus fa-3x"></i>
-	              			</div>
-	            		</div>
-	    				<img alt="cotton" src="/assets/img/COTTON.png" style="border-radius:25px; box-shadow: 10px 10px 5px #888888;"/>
-	            	</a>
-	  			</div>
-			</section>
-  			<div class="contents-right">
-    			<h3> COTTON </h3>
-    			<ul>
-      				<li> HCLib </li>
-      				<li> Async-Finish Parallelism </li>
-      				<li> cpufreq </li>
-    			</ul>
-    			<p>Developed a light-weight work-stealing runtime for async-finish parallelism which was energy efficient without incurring significant impact on the performance. Used different power saving drivers in combination with cpufreq to change the CPU frequency based on some task based heuristics. </p>
-    			<a class="project-link" href="https://github.com/dattatreya303/COTTON">Check it out</a>
-  			</div>
-		</div>
-		<div class="user-projects">
-			<section class="portfolio">
-	  			<div class="portfolio-item" style="float: right; width: 48%;">
-	  				<a class="portfolio-link">
-	    				<div class="caption">
-	              			<div class="caption-content">
-	                			<i class="fa fa-search-plus fa-3x"></i>
-	              			</div>
-	            		</div>
-	    				<img alt="paging_swapping" src="/assets/img/Paging_Swapping.png" style="border-radius:20px; box-shadow: -7px 10px 10px 5px #888888;"/>
+	    				<img alt="paging_swapping" src="/assets/img/Paging_Swapping.png" style="border-radius:20px; box-shadow: 7px 10px 10px 5px #888888;"/>
 	            	</a>
 	  			</div>
 			</section>
@@ -594,18 +572,66 @@
 	                			<i class="fa fa-search-plus fa-3x"></i>
 	              			</div>
 	            		</div>
-	    				<img alt="parallel_dfs" src="/assets/img/Parallel_DFS.jpg" style="border-radius:25px; box-shadow: 10px 10px 5px #888888;"/>
+	    				<img alt="cotton" src="/assets/img/COTTON.png" style="border-radius:25px; box-shadow: -10px 10px 5px #888888;"/>
 	            	</a>
 	  			</div>
 			</section>
   			<div class="contents-right">
-    			<h3> Parallel Depth First Search </h3>
+    			<h3> COTTON </h3>
     			<ul>
-      				<li> CUDA </li>
-      				<li> nvvp </li>
+      				<li> HCLib </li>
+      				<li> Async-Finish Parallelism </li>
+      				<li> cpufreq </li>
     			</ul>
-    			<p>Implemented a parallel version of the popular Depth First Search algorithm which is by nature non-serializable, written entirely in CUDA and showed significant performance improvement over the serial version over large graphs.</p>
-    			<a class="project-link" href="https://github.com/divyanshu-talwar/Parallel-DFS">Check it out</a>
+    			<p>Developed a light-weight work-stealing runtime for async-finish parallelism which was energy efficient without incurring significant impact on the performance. Used different power saving drivers in combination with cpufreq to change the CPU frequency based on some task based heuristics. </p>
+    			<a class="project-link" href="https://github.com/dattatreya303/COTTON">Check it out</a>
+  			</div>
+		</div>
+		<div class="user-projects">
+			<section class="portfolio">
+	  			<div class="portfolio-item" style="float: right; width: 48%; padding-left:10px;">
+	  				<a class="portfolio-link">
+	    				<div class="caption">
+	              			<div class="caption-content">
+	                			<i class="fa fa-search-plus fa-3x"></i>
+	              			</div>
+	            		</div>
+	    				<img alt="github_recommender_system" src="/assets/img/Github_Recommender_System.png" style="border-radius:25px; box-shadow: 10px 10px 5px #888888;"/>
+	            	</a>
+	  			</div>
+			</section>
+  			<div class="contents-left">
+    			<h3> Github Recommender System </h3>
+    			<ul>
+      				<li> Autoencoders </li>
+      				<li> Collaborative Filtering </li>
+      				<li> Data Collection </li>
+    			</ul>
+    			<p>Developed a recommender system similar to Amazon/Flipkart for Github where users are provided with good repositories for working on. Aim is to promote open source culture. Obtained a recall score of 0.72</p>
+    			<a class="project-link" href="https://github.com/divyanshu-talwar/Github-Recommender-System">Check it out</a>
+  			</div>
+		</div>
+		<div class="user-projects">
+			<section class="portfolio">
+	  			<div class="portfolio-item" style="float: left; width: 48%;">
+	  				<a class="portfolio-link">
+	    				<div class="caption">
+	              			<div class="caption-content">
+	                			<i class="fa fa-search-plus fa-3x"></i>
+	              			</div>
+	            		</div>
+	    				<img alt="nbdc_data_analyser" src="/assets/img/NBDC_Data_Analyser.png" style="border-radius:10px; box-shadow: -10px 10px 5px #888888; height: 17em;"/>
+	            	</a>
+	  			</div>
+			</section>
+  			<div class="contents-right">
+    			<h3> NBDC Data Analyser </h3>
+    			<ul>
+      				<li> Django </li>
+      				<li> PostgreSQL </li>
+      				<li> D3.js </li>
+    			</ul>
+    			<p>Worked on a project of National Bomb Data Center which comes under NSG(National Security Guards) to help them analyse bomb data. It is currently installed at their headquarters.</p>
   			</div>
 		</div>
 		<div class="user-projects">
@@ -617,7 +643,151 @@
 	                			<i class="fa fa-search-plus fa-3x"></i>
 	              			</div>
 	            		</div>
-	    				<img alt="low_res_face_recog" src="/assets/img/Low_Resolution_Face_Recognition.jpg" style="border-radius:20px; box-shadow: -7px 10px 10px 5px #888888; height: 20em;"/>
+	    				<img alt="smart_glasses" src="/assets/img/Smart_Glasses.png" style="border-radius:25px; box-shadow: 10px 10px 5px #888888;"/>
+	            	</a>
+	  			</div>
+			</section>
+  			<div class="contents-left">
+    			<h3> Smart Glasses </h3>
+    			<ul>
+      				<li> Open-CV </li>
+      				<li> Tesseract </li>
+      				<li> E-Speak </li>
+    			</ul>
+    			<p>A prototype to help blind people understand text in books and also allow them to identify people they already know in order to improve their life style. It was selected to be showcased at Delhi Mini Maker Faire.</p>
+    			<a class="project-link" href="https://github.com/viraj96/Smart_Glasses">Check it out</a>
+  			</div>
+		</div>
+    </section>
+	<hr class="star-light">
+	<section id="fun" style="display: flex; flex-direction: column; justify-content: space-between; width: 90%; max-width: 960px; margin: 0 auto;">
+	    <div class="user-details">
+  			<h1> Side Projects </h1>
+		</div>
+		<div class="user-projects">
+			<section class="portfolio">
+	  			<div class="portfolio-item" style="float: left; width: 48%;">
+	  				<a class="portfolio-link">
+	    				<div class="caption">
+	              			<div class="caption-content">
+	                			<i class="fa fa-search-plus fa-3x"></i>
+	              			</div>
+	            		</div>
+	    				<img alt="origami" src="/assets/img/Origami.png" style="border-radius:25px; box-shadow: -10px 10px 5px #888888; height:15em; margin-left:150px;"/>
+	            	</a>
+	  			</div>
+			</section>
+  			<div class="contents-right">
+    			<h3> Simulation of Rigid-Body Origami </h3>
+    			<ul>
+      				<li> Kinematics </li>
+      				<li> Rigid-Body Statics </li>
+    			</ul>
+                <p>Implemented a program that when given a crease pattern for a rigid-body origami it folds it in a simulated environment so that the rendered object looks like the intended origami art.</p>
+  			</div>
+		</div>
+		<div class="user-projects">
+			<section class="portfolio">
+	  			<div class="portfolio-item" style="float: right; width: 48%; padding-left:20px; padding-top: 50px;">
+	  				<a class="portfolio-link">
+	    				<div class="caption">
+	              			<div class="caption-content">
+	                			<i class="fa fa-search-plus fa-3x"></i>
+	              			</div>
+	            		</div>
+	    				<img alt="grammatical_errors" src="/assets/img/Grammatical_Errors.png" style="border-radius:25px; box-shadow: 10px 10px 10px #888888; height:15em;"/>
+	    			</a>
+	  			</div>
+			</section>
+  			<div class="contents-left">
+    			<h3> Automatic Grammatical Error Correction in English Essays </h3>
+    			<ul>
+      				<li> Alternating Structure Optimization </li>
+      				<li> Neural Machine Translation </li>
+    			</ul>
+                <p> Implemented ASO and NMT models to identify grammatical errors of Verb Form type from the NUS Corpus of Learner English dataset. Models were trained on extracted features including POS Tags, Constituency Parsing, Wordnet Hypernyms etc. 
+    			</p>
+  			</div>
+		</div>
+		<div class="user-projects">
+			<section class="portfolio">
+	  			<div class="portfolio-item" style="float: left; width: 48%;">
+	  				<a class="portfolio-link">
+	    				<div class="caption">
+	              			<div class="caption-content">
+	                			<i class="fa fa-search-plus fa-3x"></i>
+	              			</div>
+	            		</div>
+	    				<img alt="road_detection" src="/assets/img/Road_Detection.png" style="border-radius:25px; box-shadow: -10px 10px 5px #888888; height:20em; margin-left:50px;"/>
+	            	</a>
+	  			</div>
+			</section>
+  			<div class="contents-right">
+    			<h3> Road Detection in Satellite Images </h3>
+    			<ul>
+      				<li> PyTorch </li>
+      				<li> U-Net </li>
+                    <li> Segmentation </li>
+    			</ul>
+                <p>Implemented an extension of U-Net by incorporating edge information to detect road segments and compared to conventional methods such as Dominant Singular Measure. Demonstrated that incorporating only edge information as an additional prior for U-Net was not sufficient to provide better results.</p>
+    			<a class="project-link" href="https://github.com/viraj96/CV_Project">Check it out</a>
+  			</div>
+		</div>
+		<div class="user-projects">
+			<section class="portfolio">
+	  			<div class="portfolio-item" style="float: right; width: 48%; padding-left:20px; padding-top: 50px;">
+	  				<a class="portfolio-link">
+	    				<div class="caption">
+	              			<div class="caption-content">
+	                			<i class="fa fa-search-plus fa-3x"></i>
+	              			</div>
+	            		</div>
+	    				<img alt="multi_modal" src="/assets/img/Multi_Modal.png" style="border-radius:25px; box-shadow: 10px 10px 10px #888888; height:15em;"/>
+	    			</a>
+	  			</div>
+			</section>
+  			<div class="contents-left">
+    			<h3> Multimodal Emotion Detection for Multi-Party Conversation </h3>
+    			<ul>
+      				<li> DynamicRNN </li>
+      				<li> GRU </li>
+    			</ul>
+                <p>Proposed a Speaker-Listener DynamicRNN model to maintain three states including speaker, listener and a global state. The concatenated vectors of these states was then fed to an emotion detection module. Utilised the MELD and IEMOCAP datasets for training.</p>
+  			</div>
+		</div>
+		<div class="user-projects">
+			<section class="portfolio">
+	  			<div class="portfolio-item" style="float: left; width: 48%;">
+	  				<a class="portfolio-link">
+	    				<div class="caption">
+	              			<div class="caption-content">
+	                			<i class="fa fa-search-plus fa-3x"></i>
+	              			</div>
+	            		</div>
+	    				<img alt="campus_walkthrough" src="/assets/img/Campus_Walkthrough.png" style="border-radius:25px; box-shadow: -10px 10px 5px #888888; height: 17em;"/>
+	            	</a>
+	  			</div>
+			</section>
+  			<div class="contents-right">
+    			<h3> Virtual Campus Walkthrough </h3>
+    			<ul>
+      				<li> OpenGL </li>
+      				<li> Procedural Geometry </li>
+                    <li> Physics </li>
+    			</ul>
+                <p>Implemented a simple WASD based walkthrough over the virtual campus mesh and generated procedural geometry simulating clouds and trees dependent on time-based sine waves.</p>
+  			</div>
+		</div>
+		<div class="user-projects">
+			<section class="portfolio">
+	  			<div class="portfolio-item" style="float: right; width: 48%;">
+	  				<a class="portfolio-link">
+	    				<div class="caption">
+	              			<div class="caption-content">
+	                			<i class="fa fa-search-plus fa-3x"></i>
+	              			</div>
+	            		</div>
+	    				<img alt="low_res_face_recog" src="/assets/img/Low_Resolution_Face_Recognition.jpg" style="border-radius:20px; box-shadow: 7px 10px 10px 5px #888888; height: 20em;"/>
 	            	</a>
 	  			</div>
 			</section>
@@ -631,30 +801,33 @@
     			<p>Used SRGAN in combination with Facenet architecture to recognize faces in the widely used LFW Dataset. SRGAN was used for super-resolution whereas the standard triplet loss function of Facenet allowed for efficient face recognition. We compared the performance of GANs with respect to the simple bicubic interpolation.</p>
   			</div>
 		</div>
-		<div class="user-projects"> // Virtual Campus Walkthrough
+		<div class="user-projects" id="game">
 			<section class="portfolio">
-	  			<div class="portfolio-item" style="float: right; width: 48%;">
+	  			<div class="portfolio-item" style="float: left; width: 48%;">
 	  				<a class="portfolio-link">
 	    				<div class="caption">
 	              			<div class="caption-content">
 	                			<i class="fa fa-search-plus fa-3x"></i>
 	              			</div>
 	            		</div>
-	    				<img alt="low_res_face_recog" src="/assets/img/Low_Resolution_Face_Recognition.jpg" style="border-radius:20px; box-shadow: -7px 10px 10px 5px #888888; height: 20em;"/>
+	    				<img alt="zomby_survival" src="/assets/img/Zomby_Survival.png" style="border-radius:20px; box-shadow: -7px 10px 10px 5px #888888;"/>
 	            	</a>
 	  			</div>
 			</section>
-  			<div class="contents-left">
-    			<h3> Low Resolution Face Recognition </h3>
+  			<div class="contents-right">
+    			<h3> Zomby_Survival </h3>
     			<ul>
-      				<li> Pytorch </li>
-      				<li> GANs </li>
-      				<li> Triplet Loss </li>
+      				<li> Processing </li>
+      				<li> Javascript </li>
     			</ul>
-    			<p>Used SRGAN in combination with Facenet architecture to recognize faces in the widely used LFW Dataset. SRGAN was used for super-resolution whereas the standard triplet loss function of Facenet allowed for efficient face recognition. We compared the performance of GANs with respect to the simple bicubic interpolation.</p>
+    			<p>Implemented a game using Processing. Ported it to javascript using p5js and even used OOP structure provided by JS!.</p>
+    			<span>
+    				<a class="project-link" href="https://github.com/viraj96/Zomby_Survival" style="display: inline;">Check it out</a>
+    				<a class="project-link" href="./Zomby_Survival/index.html" style="display: inline;">Run it</a>
+    			</span>
   			</div>
 		</div>
-		<div class="user-projects"> // Multimodal Emotion Detection for Multi-Party Conversation
+		<div class="user-projects">
 			<section class="portfolio">
 	  			<div class="portfolio-item" style="float: right; width: 48%;">
 	  				<a class="portfolio-link">
@@ -663,45 +836,45 @@
 	                			<i class="fa fa-search-plus fa-3x"></i>
 	              			</div>
 	            		</div>
-	    				<img alt="low_res_face_recog" src="/assets/img/Low_Resolution_Face_Recognition.jpg" style="border-radius:20px; box-shadow: -7px 10px 10px 5px #888888; height: 20em;"/>
+	    				<img alt="reinforcement_learning" src="/assets/img/Reinforcement_Learning.gif" style="border-radius:20px; box-shadow: 7px 10px 10px 5px #888888; width: 15em; "/>
 	            	</a>
 	  			</div>
 			</section>
   			<div class="contents-left">
-    			<h3> Low Resolution Face Recognition </h3>
+    			<h3> Reinforcement Learning </h3>
     			<ul>
-      				<li> Pytorch </li>
-      				<li> GANs </li>
-      				<li> Triplet Loss </li>
+      				<li> Tensorflow </li>
+      				<li> OpenAI Gym </li>
+      				<li> Arcade Learning Environment </li>
     			</ul>
-    			<p>Used SRGAN in combination with Facenet architecture to recognize faces in the widely used LFW Dataset. SRGAN was used for super-resolution whereas the standard triplet loss function of Facenet allowed for efficient face recognition. We compared the performance of GANs with respect to the simple bicubic interpolation.</p>
+    			<p>Implemented reinforcement learning algorithms and understanding how they work. Also worked on finding ways to improve how the algorithm works and improves with time.</p>
+    			<a class="project-link" href="https://github.com/divyanshu-talwar/Reinforcement-Learning">Check it out</a>
   			</div>
 		</div>
-		<div class="user-projects"> // Road Detection in Satellite Images
+		<div class="user-projects">
 			<section class="portfolio">
-	  			<div class="portfolio-item" style="float: right; width: 48%;">
+	  			<div class="portfolio-item" style="float: left; width: 48%;">
 	  				<a class="portfolio-link">
 	    				<div class="caption">
 	              			<div class="caption-content">
 	                			<i class="fa fa-search-plus fa-3x"></i>
 	              			</div>
 	            		</div>
-	    				<img alt="low_res_face_recog" src="/assets/img/Low_Resolution_Face_Recognition.jpg" style="border-radius:20px; box-shadow: -7px 10px 10px 5px #888888; height: 20em;"/>
+	    				<img alt="private_tor_network" src="/assets/img/Private_Tor_Network.png" style="border-radius:25px; box-shadow: -10px 10px 10px 5px #888888;"/>
 	            	</a>
 	  			</div>
 			</section>
-  			<div class="contents-left">
-    			<h3> Low Resolution Face Recognition </h3>
+  			<div class="contents-right">
+    			<h3> Private Tor Network </h3>
     			<ul>
-      				<li> Pytorch </li>
-      				<li> GANs </li>
-      				<li> Triplet Loss </li>
+      				<li> Tor </li>
+      				<li> Network Administration </li>
     			</ul>
-    			<p>Used SRGAN in combination with Facenet architecture to recognize faces in the widely used LFW Dataset. SRGAN was used for super-resolution whereas the standard triplet loss function of Facenet allowed for efficient face recognition. We compared the performance of GANs with respect to the simple bicubic interpolation.</p>
+    			<p>Created a private Tor network and were able to demonstrate seamless talk between relays and DA. Helped to understand intricacies of Tor.</p>
+    			<a class="project-link" href="https://github.com/viraj96/Private-Tor-Network">Check it out</a>
   			</div>
 		</div>
-		<div class="user-projects"> // Automatic Grammatical Error Correction in English Essays
-
+		<div class="user-projects">
 			<section class="portfolio">
 	  			<div class="portfolio-item" style="float: right; width: 48%;">
 	  				<a class="portfolio-link">
@@ -710,138 +883,19 @@
 	                			<i class="fa fa-search-plus fa-3x"></i>
 	              			</div>
 	            		</div>
-	    				<img alt="low_res_face_recog" src="/assets/img/Low_Resolution_Face_Recognition.jpg" style="border-radius:20px; box-shadow: -7px 10px 10px 5px #888888; height: 20em;"/>
-	            	</a>
+	    				<img id="first" alt="asphalt_retro" src="/assets/img/Asphalt_Retro.png" style="border-radius:25px; box-shadow: 10px 10px 10px #888888;"/>
+	    			</a>
 	  			</div>
 			</section>
   			<div class="contents-left">
-    			<h3> Low Resolution Face Recognition </h3>
+    			<h3> Asphalt Retro </h3>
     			<ul>
-      				<li> Pytorch </li>
-      				<li> GANs </li>
-      				<li> Triplet Loss </li>
+      				<li> SDL </li>
+      				<li> QuickCG </li>
     			</ul>
-    			<p>Used SRGAN in combination with Facenet architecture to recognize faces in the widely used LFW Dataset. SRGAN was used for super-resolution whereas the standard triplet loss function of Facenet allowed for efficient face recognition. We compared the performance of GANs with respect to the simple bicubic interpolation.</p>
-  			</div>
-		</div>
-		<div class="user-projects"> // Amorphous Tensorflow
-
-			<section class="portfolio">
-	  			<div class="portfolio-item" style="float: right; width: 48%;">
-	  				<a class="portfolio-link">
-	    				<div class="caption">
-	              			<div class="caption-content">
-	                			<i class="fa fa-search-plus fa-3x"></i>
-	              			</div>
-	            		</div>
-	    				<img alt="low_res_face_recog" src="/assets/img/Low_Resolution_Face_Recognition.jpg" style="border-radius:20px; box-shadow: -7px 10px 10px 5px #888888; height: 20em;"/>
-	            	</a>
-	  			</div>
-			</section>
-  			<div class="contents-left">
-    			<h3> Low Resolution Face Recognition </h3>
-    			<ul>
-      				<li> Pytorch </li>
-      				<li> GANs </li>
-      				<li> Triplet Loss </li>
-    			</ul>
-    			<p>Used SRGAN in combination with Facenet architecture to recognize faces in the widely used LFW Dataset. SRGAN was used for super-resolution whereas the standard triplet loss function of Facenet allowed for efficient face recognition. We compared the performance of GANs with respect to the simple bicubic interpolation.</p>
-  			</div>
-		</div>
-		<div class="user-projects"> // NIRF Data Analysis
-
-			<section class="portfolio">
-	  			<div class="portfolio-item" style="float: right; width: 48%;">
-	  				<a class="portfolio-link">
-	    				<div class="caption">
-	              			<div class="caption-content">
-	                			<i class="fa fa-search-plus fa-3x"></i>
-	              			</div>
-	            		</div>
-	    				<img alt="low_res_face_recog" src="/assets/img/Low_Resolution_Face_Recognition.jpg" style="border-radius:20px; box-shadow: -7px 10px 10px 5px #888888; height: 20em;"/>
-	            	</a>
-	  			</div>
-			</section>
-  			<div class="contents-left">
-    			<h3> Low Resolution Face Recognition </h3>
-    			<ul>
-      				<li> Pytorch </li>
-      				<li> GANs </li>
-      				<li> Triplet Loss </li>
-    			</ul>
-    			<p>Used SRGAN in combination with Facenet architecture to recognize faces in the widely used LFW Dataset. SRGAN was used for super-resolution whereas the standard triplet loss function of Facenet allowed for efficient face recognition. We compared the performance of GANs with respect to the simple bicubic interpolation.</p>
-  			</div>
-		</div>
-		<div class="user-projects"> // Autonomous Driving using CNNs
-
-			<section class="portfolio">
-	  			<div class="portfolio-item" style="float: right; width: 48%;">
-	  				<a class="portfolio-link">
-	    				<div class="caption">
-	              			<div class="caption-content">
-	                			<i class="fa fa-search-plus fa-3x"></i>
-	              			</div>
-	            		</div>
-	    				<img alt="low_res_face_recog" src="/assets/img/Low_Resolution_Face_Recognition.jpg" style="border-radius:20px; box-shadow: -7px 10px 10px 5px #888888; height: 20em;"/>
-	            	</a>
-	  			</div>
-			</section>
-  			<div class="contents-left">
-    			<h3> Low Resolution Face Recognition </h3>
-    			<ul>
-      				<li> Pytorch </li>
-      				<li> GANs </li>
-      				<li> Triplet Loss </li>
-    			</ul>
-    			<p>Used SRGAN in combination with Facenet architecture to recognize faces in the widely used LFW Dataset. SRGAN was used for super-resolution whereas the standard triplet loss function of Facenet allowed for efficient face recognition. We compared the performance of GANs with respect to the simple bicubic interpolation.</p>
-  			</div>
-		</div>
-		<div class="user-projects"> // Lossy Compression using Neural Networks
-
-			<section class="portfolio">
-	  			<div class="portfolio-item" style="float: right; width: 48%;">
-	  				<a class="portfolio-link">
-	    				<div class="caption">
-	              			<div class="caption-content">
-	                			<i class="fa fa-search-plus fa-3x"></i>
-	              			</div>
-	            		</div>
-	    				<img alt="low_res_face_recog" src="/assets/img/Low_Resolution_Face_Recognition.jpg" style="border-radius:20px; box-shadow: -7px 10px 10px 5px #888888; height: 20em;"/>
-	            	</a>
-	  			</div>
-			</section>
-  			<div class="contents-left">
-    			<h3> Low Resolution Face Recognition </h3>
-    			<ul>
-      				<li> Pytorch </li>
-      				<li> GANs </li>
-      				<li> Triplet Loss </li>
-    			</ul>
-    			<p>Used SRGAN in combination with Facenet architecture to recognize faces in the widely used LFW Dataset. SRGAN was used for super-resolution whereas the standard triplet loss function of Facenet allowed for efficient face recognition. We compared the performance of GANs with respect to the simple bicubic interpolation.</p>
-  			</div>
-		</div>
-		<div class="user-projects"> // Sample-based planning under discrete space.
-
-			<section class="portfolio">
-	  			<div class="portfolio-item" style="float: right; width: 48%;">
-	  				<a class="portfolio-link">
-	    				<div class="caption">
-	              			<div class="caption-content">
-	                			<i class="fa fa-search-plus fa-3x"></i>
-	              			</div>
-	            		</div>
-	    				<img alt="low_res_face_recog" src="/assets/img/Low_Resolution_Face_Recognition.jpg" style="border-radius:20px; box-shadow: -7px 10px 10px 5px #888888; height: 20em;"/>
-	            	</a>
-	  			</div>
-			</section>
-  			<div class="contents-left">
-    			<h3> Low Resolution Face Recognition </h3>
-    			<ul>
-      				<li> Pytorch </li>
-      				<li> GANs </li>
-      				<li> Triplet Loss </li>
-    			</ul>
-    			<p>Used SRGAN in combination with Facenet architecture to recognize faces in the widely used LFW Dataset. SRGAN was used for super-resolution whereas the standard triplet loss function of Facenet allowed for efficient face recognition. We compared the performance of GANs with respect to the simple bicubic interpolation.</p>
+    			<p>A simple game written in C++ SDL environment using QuickCG graphics library. Mimics the original Asphalt game.
+    			</p>
+    			<a class="project-link" href="https://github.com/viraj96/Profile/tree/master/Game">Check it out</a>
   			</div>
 		</div>
 	</section>
