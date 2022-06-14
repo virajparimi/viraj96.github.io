@@ -1,10 +1,10 @@
 ---
-title:  "COTTON: A light-weight work-stealing runtime for async-finish parallelism"
-excerpt: "Developed a light-weight work-stealing runtime for async-finish parallelism which was energy efficient without incurring significant impact on the performance. Used different power saving drivers in combination with cpufreq to change the CPU frequency based on some task based heuristics."
+title: "Parallel Depth First Search for Directed Acyclic Graphs"
+excerpt: "Implemented a parallel version of the popular Depth First Search algorithm which is by nature non-serializable, written entirely in CUDA and showed significant performance improvement over the serial version over large graphs."
 collection: portfolio
 ---
 
-Developed a light-weight work-stealing runtime for async-finish parallelism which was energy efficient without incurring significant impact on the performance. Used different power saving drivers in combination with cpufreq to change the CPU frequency based on some task based heuristics.
-<br/><img style='margin: auto; padding: 50px; display: block; width: 80% !important; max-width: 700px !important;' src='/images/COTTON.png'>
+Depth-First Search (DFS) is a common algorithm, often used as a building block for topological sort, connectivity and planarity testing, among many other applications. We implemented the work-efficient parallel algorithm for the DFS traversal of directed acyclic graphs (DAGs) and reported the speedup of this parallel algorithm (in comparison with the serial implementation).
+<br/><img style='margin: auto; padding: 50px; display: block; width: 80% !important; max-width: 700px !important;' src='/images/Parallel_DFS.jpg'>
 
-[[PDF]](https://viraj96.github.io/files/portfolio-7/report.pdf) [[Code]](https://github.com/dattatreya303/COTTON)
+[[PDF]](https://viraj96.github.io/files/portfolio-7/report.pdf) [[Code]](https://github.com/divyanshu-talwar/Parallel-DFS)

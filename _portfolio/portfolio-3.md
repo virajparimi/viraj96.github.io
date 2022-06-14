@@ -1,11 +1,10 @@
 ---
-title: "Lossy Compression using Neural Networks"
-excerpt: "Formulated quantization techniques to generate discrete latent space representations among image and textbased autoencoder models without significant performance implications. Showcased that incorporating commit-loss to the learning process improved the compression ratio of both imageand text based models while maintaining the quality of reconstructions"
+title: "Sample-Based Planning under Discrete Space"
+excerpt: "Proposed a hierarchical decomposition algorithm where we discretize the continuous sample space of PRM/RRT algorithms in order to provide tighter completeness guarantees. Demonstrated the performance improvement of the proposed approach for 6-link robotic arm"
 collection: portfolio
 ---
 
-We used autoencoder models with discrete latent space representations to perform lossy compression of image and text based data without significant performance implicates with respect to continuous couterparts like Variational Autoencoders. To improve the compression ratio we tried a naive quantization technique followed by incorporating the quantization objective into a loss function to make the output closer to quantized numbers. Finally, we also tried a training time quantization
-technique and performed extensive experiments on different image and text based datasets.
-<br/><img style='margin: auto; display: block; width: 80% !important; max-width: 700px !important;' src='/images/Lossy_Compression.png'>
+Introduced dRRT, a discrete sampling-based planner that uses Bresenham's line algorithm and techniques from search-based planning to achieve anytime qualities and reuse computation. Results on planning for a 5-DOF robotic arm demonstrate faster performance than traditional RRT.
+<br/><img style='margin: auto; display: block; width: 80% !important; max-width: 700px !important;' src='/images/Planning.png'>
 
-[[PDF]](https://viraj96.github.io/files/portfolio-3/report.pdf) [[Code]](https://github.com/divamgupta/dnn_lossy_compression)
+[[PDF]](https://viraj96.github.io/files/portfolio-3/report.pdf) [[Slides]](https://viraj96.github.io/files/portfolio-3/presentation.pptx) [[Code]](https://bitbucket.org/eaglez1111/16782_final_proj/src/master/)

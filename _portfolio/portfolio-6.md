@@ -1,10 +1,10 @@
 ---
-title: "Parallel Depth First Search for Directed Acyclic Graphs"
-excerpt: "Implemented a parallel version of the popular Depth First Search algorithm which is by nature non-serializable, written entirely in CUDA and showed significant performance improvement over the serial version over large graphs."
+title: "Classification for Research Universities in India"
+excerpt: "Worked on an extended classification approach for research universities in India, based on the Carnegie classification approach. Proposed a simple basic criterion for identifying research universities depending on factors such as research funding, number of faculty members etc."
 collection: portfolio
 ---
 
-Depth-First Search (DFS) is a common algorithm, often used as a building block for topological sort, connectivity and planarity testing, among many other applications. We implemented the work-efficient parallel algorithm for the DFS traversal of directed acyclic graphs (DAGs) and reported the speedup of this parallel algorithm (in comparison with the serial implementation).
-<br/><img style='margin: auto; padding: 50px; display: block; width: 80% !important; max-width: 700px !important;' src='/images/Parallel_DFS.jpg'>
+Evolved an approach to classify research universities in India, based on the Carnegie Classification approach. We proposed a simple basic criterion for identifying research universities, and apply it to the top 100 universities and top 100 engineering institutions in India. Using this criteria, 40 universities and 32 engineering institutions were identified as research higher education insititutes (HEIs).
+<br/><img style='margin: auto; padding: 50px; display: block; width: 80% !important; max-width: 700px !important;' src='/images/NIRF.png'>
 
-[[PDF]](https://viraj96.github.io/files/portfolio-6/report.pdf) [[Code]](https://github.com/divyanshu-talwar/Parallel-DFS)
+[[Paper]](https://link.springer.com/article/10.1007/s10734-019-00406-3#:~:text=the%20number%20of%20PhD%20students<Plug>PeepOpener%2Dcapita%20level%20of%20research.")
