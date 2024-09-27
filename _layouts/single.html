@@ -57,6 +57,23 @@ layout: default
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
+      {% if page.title == 'About' %}
+          <section style="text-align: center;">
+            <a href="https://mers.csail.mit.edu/">
+              <img src="images/mers_logo.png" class="img-fluid" alt="MERS" style="width: 23%">
+            </a>
+            <a href="https://www.csail.mit.edu/">
+              <img src="images/CSAIL.png" class="img-fluid" alt="CSAIL" style="width: 23%;">
+            </a>
+            <a href="https://ei.csail.mit.edu/">
+              <img src="images/EI.jpeg" class="img-fluid" alt="EI" style="width: 15%;">
+            </a>
+            <a href="https://www.eecs.mit.edu/">
+              <img src="images/EECS.png" class="img-fluid" alt="EECS" style="width: 15%;">
+            </a>
+            </section>
+      {% endif %}
+
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
