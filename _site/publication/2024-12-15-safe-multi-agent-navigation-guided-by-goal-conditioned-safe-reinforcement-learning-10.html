@@ -19,7 +19,7 @@
 
 
 
-<title>Diffusion-Guided Multi-Arm Decentralized Motion Planning - Viraj Parimi</title>
+<title>Safe Multi-Agent Navigation guided by Goal-Conditioned Safe Reinforcement Learning - Viraj Parimi</title>
 
 
 
@@ -29,15 +29,15 @@
 
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="Viraj Parimi">
-<meta property="og:title" content="Diffusion-Guided Multi-Arm Decentralized Motion Planning">
+<meta property="og:title" content="Safe Multi-Agent Navigation guided by Goal-Conditioned Safe Reinforcement Learning">
 
 
-  <link rel="canonical" href="http://localhost:4000/publication/2024-09-28-diffusion-guided-multi-arm-decentralized-motion-planning">
-  <meta property="og:url" content="http://localhost:4000/publication/2024-09-28-diffusion-guided-multi-arm-decentralized-motion-planning">
+  <link rel="canonical" href="http://localhost:4000/publication/2024-12-15-safe-multi-agent-navigation-guided-by-goal-conditioned-safe-reinforcement-learning-10">
+  <meta property="og:url" content="http://localhost:4000/publication/2024-12-15-safe-multi-agent-navigation-guided-by-goal-conditioned-safe-reinforcement-learning-10">
 
 
 
-  <meta property="og:description" content="[Paper][Poster]">
+  <meta property="og:description" content="Safe navigation is essential for autonomous systems operating in hazardous environments. Traditional planning methods are effective for solving long-horizon tasks but depend on the availability of a graph representation with predefined distance metrics. In contrast, safe Reinforcement Learning (RL) is capable of learning complex behaviors without relying on manual heuristics but fails to solve long-horizon tasks, particularly in goal-conditioned and multi-agent scenarios.">
 
 
 
@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2024-09-28T00:00:00-04:00">
+  <meta property="article:published_time" content="2024-12-15T00:00:00-05:00">
 
 
 
@@ -255,21 +255,21 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Diffusion-Guided Multi-Arm Decentralized Motion Planning">
-    <meta itemprop="description" content="[Paper][Poster]">
-    <meta itemprop="datePublished" content="September 28, 2024">
+    <meta itemprop="headline" content="Safe Multi-Agent Navigation guided by Goal-Conditioned Safe Reinforcement Learning">
+    <meta itemprop="description" content="Safe navigation is essential for autonomous systems operating in hazardous environments. Traditional planning methods are effective for solving long-horizon tasks but depend on the availability of a graph representation with predefined distance metrics. In contrast, safe Reinforcement Learning (RL) is capable of learning complex behaviors without relying on manual heuristics but fails to solve long-horizon tasks, particularly in goal-conditioned and multi-agent scenarios.">
+    <meta itemprop="datePublished" content="December 15, 2024">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Diffusion-Guided Multi-Arm Decentralized Motion Planning
+          <h1 class="page__title" itemprop="headline">Safe Multi-Agent Navigation guided by Goal-Conditioned Safe Reinforcement Learning
 </h1>
           
         
         
         
-          <p>Published in <i>NERC | Extended Abstract</i>, 2024 </p>
+          <p>Published in <i>NeurIPS | Intrisically Motivated Open-Ended Learning </i>, 2024 </p>
         
         
              
@@ -279,8 +279,13 @@
       
 
       <section class="page__content" itemprop="text">
-        <p><a href="https://viraj96.github.io/files/paper9.pdf">[Paper]</a>
-<a href="https://viraj96.github.io/files/poster1.pdf">[Poster]</a></p>
+        <p>Safe navigation is essential for autonomous systems operating in hazardous environments. Traditional planning methods are effective for solving long-horizon tasks but depend on the availability of a graph representation with predefined distance metrics. In contrast, safe Reinforcement Learning (RL) is capable of learning complex behaviors without relying on manual heuristics but fails to solve long-horizon tasks, particularly in goal-conditioned and multi-agent scenarios.</p>
+
+<p>In this paper, we introduce a novel method that integrates the strengths of both planning and safe RL. Our method leverages goal-conditioned RL and safe RL to learn a goal-conditioned policy for navigation while concurrently estimating cumulative distance and safety levels using learned value functions via an automated self-training algorithm. By constructing a graph with states from the replay buffer, our method prunes unsafe edges and generates a waypoint-based plan that the agent then executes by following those waypoints sequentially until their goal locations are reached. This graph pruning and planning approach via the learned value functions allows our approach to flexibly balance the trade-off between faster and safer routes especially over extended horizons.</p>
+
+<p>Utilizing this unified high-level graph and a shared low-level goal-conditioned safe RL policy, we extend this approach to address the multi-agent safe navigation problem. In particular, we leverage Conflict-Based Search (CBS) to create waypoint-based plans for multiple agents allowing for their safe navigation over extended horizons. This integration enhances the scalability of goal-conditioned safe RL in multi-agent scenarios, enabling efficient coordination among agents. Extensive benchmarking against state-of-the-art baselines demonstrates the effectiveness of our method in achieving distance goals safely for multiple agents in complex and hazardous environments.</p>
+
+<p><a href="https://viraj96.github.io/files/paper10.pdf">[Paper]</a></p>
 
         
       </section>
@@ -303,12 +308,11 @@
 
   <nav class="pagination">
     
-      <a href="http://localhost:4000/publication/2024-09-19-multi-agent-vulcan-an-information-driven-multi-agent-path-finding-approach" class="pagination--pager" title="Multi-Agent Vulcan: An Information-Driven Multi-Agent Path Finding Approach
+      <a href="http://localhost:4000/publication/2024-09-28-diffusion-guided-multi-arm-decentralized-motion-planning" class="pagination--pager" title="Diffusion-Guided Multi-Arm Decentralized Motion Planning
 ">Previous</a>
     
     
-      <a href="http://localhost:4000/publication/2024-12-15-safe-multi-agent-navigation-guided-by-goal-conditioned-safe-reinforcement-learning-10" class="pagination--pager" title="Safe Multi-Agent Navigation guided by Goal-Conditioned Safe Reinforcement Learning
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
