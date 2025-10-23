@@ -37,7 +37,7 @@
 
 
 
-  <meta property="og:description" content="The combinatorics of various search-based approaches to planning pose a solid barrier to scalable performance. Such approaches become increasingly complex and complicated, even in single-agent planning contexts, as the number of goals to be achieved increases. We propose that such complex combinatorics can be overcome by learning an abstract model of the planner’s search that utilizes various state characteristics to learn the relative quality of various search decisions over time. An efficient machine learning framework consisting of a Long Short Term Memory Network is developed to accelerate the time consuming search process and achieve a substantial computational speedup by learning the planner’s reasoning from spatial and temporal global states and constraints. It generalizes well and enables efficient usage of multiple agents across multiple tasks.">
+  <meta property="og:description" content="We show how sequence models capture a planner’s decision patterns and use the learned heuristics to shrink search time across diverse multi-agent planning tasks.">
 
 
 
@@ -100,22 +100,12 @@
 
 <!-- start custom head snippets -->
 
-<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon.ico" sizes="32x32">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/android.ico" sizes="192x192">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon.ico" sizes="96x96">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon.ico" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon.ico" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon.ico" sizes="16x16">
 <link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
 <link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
-<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
 <meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
@@ -153,16 +143,67 @@
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Viraj Parimi</a></li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/publications/">Publications</a></li>
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/publications/"
+                 >
+                Publications
+              </a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/theses/">Theses</a></li>
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/theses/"
+                 >
+                Theses
+              </a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/portfolio/">Projects</a></li>
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/portfolio/"
+                 >
+                Projects
+              </a>
+            </li>
           
-            <li class="masthead__menu-item"><a href="https://viraj96.github.io/old">Old</a></li>
-            <li class="masthead__menu-item"><a href="https://viraj96.github.io/files/cv.pdf">CV</a></li>
+            
+            
+            
+            <li class="masthead__menu-item">
+              <a href="https://virajparimi.github.io/old"
+                 target="_blank" rel="noopener">
+                Old
+              </a>
+            </li>
+          
+            
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/files/Viraj-Parimi-Resume.pdf"
+                 target="_blank" rel="noopener">
+                Resume
+              </a>
+            </li>
+          
+            
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/files/Viraj-Parimi-CV.pdf"
+                 target="_blank" rel="noopener">
+                CV
+              </a>
+            </li>
+          
+            <!-- <li class="masthead__menu-item"><a href="/old">Old</a></li>
+            <li class="masthead__menu-item"><a href="/files/cv.pdf">CV</a></li> -->
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
@@ -216,16 +257,14 @@
       
       
       
-        <li><a href="https://www.linkedin.com/in/https://www.linkedin.com/in/virajparimi/"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/virajparimi"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
       
       
       
       
       
       
-        <li><a href="https://github.com/viraj96"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
-      
-      
+        <li><a href="https://github.com/virajparimi"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
       
       
       
@@ -234,11 +273,15 @@
       
       
       
+        <li><a href="https://www.youtube.com/@vparimi"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a></li>
       
       
       
       
-        <li><a href="https://scholar.google.com/citations?user=Uj2A2ywAAAAJ&hl=envs"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+      
+      
+      
+        <li><a href="https://scholar.google.com/citations?user=Uj2A2ywAAAAJ&hl=en"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
       
       
       
@@ -256,7 +299,7 @@
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Towards efficient and scalable planning: Learning search heuristics for multi-agent planning frameworks">
-    <meta itemprop="description" content="The combinatorics of various search-based approaches to planning pose a solid barrier to scalable performance. Such approaches become increasingly complex and complicated, even in single-agent planning contexts, as the number of goals to be achieved increases. We propose that such complex combinatorics can be overcome by learning an abstract model of the planner’s search that utilizes various state characteristics to learn the relative quality of various search decisions over time. An efficient machine learning framework consisting of a Long Short Term Memory Network is developed to accelerate the time consuming search process and achieve a substantial computational speedup by learning the planner’s reasoning from spatial and temporal global states and constraints. It generalizes well and enables efficient usage of multiple agents across multiple tasks.">
+    <meta itemprop="description" content="We show how sequence models capture a planner’s decision patterns and use the learned heuristics to shrink search time across diverse multi-agent planning tasks.">
     <meta itemprop="datePublished" content="October 23, 2023">
     
 
@@ -269,20 +312,45 @@
         
         
         
-          <p>Published in <i>CoRL | Learning Effective Abstractions for Planning</i>, 2023 </p>
+          
+            <p>Published in, <i>CoRL | Workshop on Learning Effective Abstractions for Planning</i>, 2023 </p>
+          
+        
+
         
         
              
         
-    
+
         </header>
       
 
+      
+        
+        
+        <figure class="page__lead-media">
+          <img src="http://localhost:4000/images/HTN_Repr.png" alt="Learning-guided planning graphic" loading="lazy">
+          
+        </figure>
+      
+
       <section class="page__content" itemprop="text">
-        <p>The combinatorics of various search-based approaches to planning pose a solid barrier to scalable performance. Such approaches become increasingly complex and complicated, even in single-agent planning contexts, as the number of goals to be achieved increases. We propose that such complex combinatorics can be overcome by learning an abstract model of the planner’s search that utilizes various state characteristics to learn the relative quality of various search decisions over time. An efficient machine learning framework consisting of a Long Short Term Memory Network is developed to accelerate the time consuming search process and achieve a substantial computational speedup by learning the planner’s reasoning from spatial and temporal global states and constraints. It generalizes well and enables efficient usage of multiple agents across multiple tasks.</p>
+        
+        <p>We show how sequence models capture a planner’s decision patterns and use the learned heuristics to shrink search time across diverse multi-agent planning tasks.</p>
 
-<p><a href="https://viraj96.github.io/files/paper6.pdf">[Paper]</a></p>
+        
+          <details class="page__abstract">
+            <summary class="page__abstract-summary">
+              <span class="page__abstract-title">Abstract</span>
+              <span class="page__abstract-indicator" aria-hidden="true"></span>
+            </summary>
+            <div class="page__abstract-body">
+              <p>The combinatorics of various search-based approaches to planning pose a solid barrier to scalable performance. Such approaches become increasingly complex and complicated, even in single-agent planning contexts, as the number of goals to be achieved increases. We propose that such complex combinatorics can be overcome by learning an abstract model of the planner’s search that utilizes various state characteristics to learn the relative quality of various search decisions over time. An efficient machine learning framework consisting of a Long Short Term Memory Network is developed to accelerate the time-consuming search process and achieve a substantial computational speedup by learning the planner’s reasoning from spatial and temporal global states and constraints. It generalizes well and enables efficient usage of multiple agents across multiple tasks</p>
 
+            </div>
+          </details>
+        
+        
         
       </section>
 
@@ -326,27 +394,26 @@
     <div class="page__footer">
       <footer>
         <!-- start custom footer snippets -->
-<a href="/sitemap/">Sitemap</a>
 <!-- end custom footer snippets -->
 
         
 
 <div class="page__footer-follow">
-  <ul class="social-icons">
-    
-      <li><strong>Follow:</strong></li>
-    
-    
-    
-    
-      <li><a href="http://github.com/viraj96"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    
-    
-    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
-  </ul>
+  <div class="page__footer-follow-inner">
+    <ul class="social-icons">
+      
+      
+      
+      
+        <li><a href="http://github.com/virajparimi"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+      
+      
+    </ul>
+    <div class="page__footer-updated">Last updated: October 23, 2025</div>
+  </div>
 </div>
 
-<div class="page__footer-copyright">&copy; 2024 Viraj Parimi. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2025 Viraj Parimi. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -365,7 +432,6 @@
   ga('create', 'UA-110955894-1', 'auto');
   ga('send', 'pageview');
 </script>
-
 
 
 

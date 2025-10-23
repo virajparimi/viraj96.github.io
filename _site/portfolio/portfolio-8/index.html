@@ -19,7 +19,7 @@
 
 
 
-<title>COTTON: A light-weight work-stealing runtime for async-finish parallelism - Viraj Parimi</title>
+<title>COTTON: A Light-Weight Work-Stealing Runtime - Viraj Parimi</title>
 
 
 
@@ -29,7 +29,7 @@
 
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="Viraj Parimi">
-<meta property="og:title" content="COTTON: A light-weight work-stealing runtime for async-finish parallelism">
+<meta property="og:title" content="COTTON: A Light-Weight Work-Stealing Runtime">
 
 
   <link rel="canonical" href="http://localhost:4000/portfolio/portfolio-8/">
@@ -37,7 +37,7 @@
 
 
 
-  <meta property="og:description" content="Developed a light-weight work-stealing runtime for async-finish parallelism which was energy efficient without incurring significant impact on the performance. Used different power saving drivers in combination with cpufreq to change the CPU frequency based on some task based heuristics.">
+  <meta property="og:description" content="Developed an energy-aware async-finish runtime that adjusts CPU frequency via task-aware heuristics without sacrificing performance.">
 
 
 
@@ -97,22 +97,12 @@
 
 <!-- start custom head snippets -->
 
-<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon.ico" sizes="32x32">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/android.ico" sizes="192x192">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon.ico" sizes="96x96">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon.ico" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon.ico" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon.ico" sizes="16x16">
 <link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
 <link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
-<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
 <meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
@@ -150,16 +140,67 @@
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Viraj Parimi</a></li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/publications/">Publications</a></li>
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/publications/"
+                 >
+                Publications
+              </a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/theses/">Theses</a></li>
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/theses/"
+                 >
+                Theses
+              </a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/portfolio/">Projects</a></li>
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/portfolio/"
+                 >
+                Projects
+              </a>
+            </li>
           
-            <li class="masthead__menu-item"><a href="https://viraj96.github.io/old">Old</a></li>
-            <li class="masthead__menu-item"><a href="https://viraj96.github.io/files/cv.pdf">CV</a></li>
+            
+            
+            
+            <li class="masthead__menu-item">
+              <a href="https://virajparimi.github.io/old"
+                 target="_blank" rel="noopener">
+                Old
+              </a>
+            </li>
+          
+            
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/files/Viraj-Parimi-Resume.pdf"
+                 target="_blank" rel="noopener">
+                Resume
+              </a>
+            </li>
+          
+            
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/files/Viraj-Parimi-CV.pdf"
+                 target="_blank" rel="noopener">
+                CV
+              </a>
+            </li>
+          
+            <!-- <li class="masthead__menu-item"><a href="/old">Old</a></li>
+            <li class="masthead__menu-item"><a href="/files/cv.pdf">CV</a></li> -->
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
@@ -213,16 +254,14 @@
       
       
       
-        <li><a href="https://www.linkedin.com/in/https://www.linkedin.com/in/virajparimi/"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/virajparimi"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
       
       
       
       
       
       
-        <li><a href="https://github.com/viraj96"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
-      
-      
+        <li><a href="https://github.com/virajparimi"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
       
       
       
@@ -231,11 +270,15 @@
       
       
       
+        <li><a href="https://www.youtube.com/@vparimi"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a></li>
       
       
       
       
-        <li><a href="https://scholar.google.com/citations?user=Uj2A2ywAAAAJ&hl=envs"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+      
+      
+      
+        <li><a href="https://scholar.google.com/citations?user=Uj2A2ywAAAAJ&hl=en"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
       
       
       
@@ -252,33 +295,59 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="COTTON: A light-weight work-stealing runtime for async-finish parallelism">
-    <meta itemprop="description" content="Developed a light-weight work-stealing runtime for async-finish parallelism which was energy efficient without incurring significant impact on the performance. Used different power saving drivers in combination with cpufreq to change the CPU frequency based on some task based heuristics.">
+    <meta itemprop="headline" content="COTTON: A Light-Weight Work-Stealing Runtime">
+    <meta itemprop="description" content="Developed an energy-aware async-finish runtime that adjusts CPU frequency via task-aware heuristics without sacrificing performance.">
     
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">COTTON: A light-weight work-stealing runtime for async-finish parallelism
+          <h1 class="page__title" itemprop="headline">COTTON: A Light-Weight Work-Stealing Runtime
 </h1>
           
         
         
         
+
+        
         
              
         
-    
+
         </header>
       
 
+      
+        
+        
+        <figure class="page__lead-media">
+          <img src="http://localhost:4000/images/COTTON.png" alt="Energy-aware work-stealing scheduler overview" loading="lazy">
+          
+        </figure>
+      
+
       <section class="page__content" itemprop="text">
-        <p>Developed a light-weight work-stealing runtime for async-finish parallelism which was energy efficient without incurring significant impact on the performance. Used different power saving drivers in combination with cpufreq to change the CPU frequency based on some task based heuristics.
-<br /><img style="margin: auto; padding: 50px; display: block; width: 80% !important; max-width: 700px !important;" src="/images/COTTON.png" /></p>
+        
+          <div class="page__project-links">
+            <span class="page__project-label"><i class="fa fa-globe" aria-hidden="true"></i> Project:</span>
+            <div class="page__project-links-list">
+              
+                
+                
+                <a href="/files/portfolio-8/report.pdf" >PDF</a>
+              
+                
+                
+                <a href="https://github.com/dattatreya303/COTTON" target="_blank" rel="noopener">Code</a>
+              
+            </div>
+          </div>
+        
+        <p>COTTON is a lightweight work-stealing runtime for async-finish parallel programs that we augmented with energy-saving policies. By combining Linux power-saving drivers with task-aware heuristics that tune CPU frequency via <code class="language-plaintext highlighter-rouge">cpufreq</code>, the runtime reduces energy consumption while preserving performance across benchmarks.</p>
 
-<p><a href="https://viraj96.github.io/files/portfolio-8/report.pdf">[PDF]</a> <a href="https://github.com/dattatreya303/COTTON">[Code]</a></p>
-
+        
+        
         
       </section>
 
@@ -304,7 +373,7 @@
 ">Previous</a>
     
     
-      <a href="http://localhost:4000/portfolio/portfolio-9/" class="pagination--pager" title="Github Recommender System
+      <a href="http://localhost:4000/portfolio/portfolio-9/" class="pagination--pager" title="GitHub Recommender System
 ">Next</a>
     
   </nav>
@@ -322,27 +391,26 @@
     <div class="page__footer">
       <footer>
         <!-- start custom footer snippets -->
-<a href="/sitemap/">Sitemap</a>
 <!-- end custom footer snippets -->
 
         
 
 <div class="page__footer-follow">
-  <ul class="social-icons">
-    
-      <li><strong>Follow:</strong></li>
-    
-    
-    
-    
-      <li><a href="http://github.com/viraj96"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    
-    
-    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
-  </ul>
+  <div class="page__footer-follow-inner">
+    <ul class="social-icons">
+      
+      
+      
+      
+        <li><a href="http://github.com/virajparimi"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+      
+      
+    </ul>
+    <div class="page__footer-updated">Last updated: October 23, 2025</div>
+  </div>
 </div>
 
-<div class="page__footer-copyright">&copy; 2024 Viraj Parimi. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2025 Viraj Parimi. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -361,7 +429,6 @@
   ga('create', 'UA-110955894-1', 'auto');
   ga('send', 'pageview');
 </script>
-
 
 
 

@@ -37,7 +37,7 @@
 
 
 
-  <meta property="og:description" content="Effective coordinated actions by a team of robots operating in close proximity to one another is an important requirement in many emerging applications, ranging from warehousing and material movement to the conduct of autonomous house-keeping and maintenance of deep space habitats during unmanned periods. Yet, such multi-robot planning problems remain a significant challenge for contemporary planning technologies, due to several complicating factors: goals must be assigned to robots and accomplished over time in the presence of complex temporal and spatial constraints in a manner that optimizes overall team performance, attention must be given to the durational uncertainty inherent in robot task execution, and planning must be responsive to changing and unexpected execution circumstances. In this paper, we present T-HTN, a novel planner that attempts to overcome this challenge by coupling the structure and efficiency of Hierarchical Task Network (HTN) models with the flexible scheduling infrastructure of timeline-based planning systems. We present initial results on a simple set of multi-robot problems that show the potential of T-HTN in comparison to a state-of-the-art PDDL-style temporal planner.">
+  <meta property="og:description" content="T-HTN threads HTN structure with flexible timelines so multi-robot teams honor temporal deadlines, shared resources, and unexpected execution delays while keeping plans tractable.">
 
 
 
@@ -100,22 +100,12 @@
 
 <!-- start custom head snippets -->
 
-<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon.ico" sizes="32x32">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/android.ico" sizes="192x192">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon.ico" sizes="96x96">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon.ico" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon.ico" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon.ico" sizes="16x16">
 <link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
 <link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
-<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
 <meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
@@ -153,16 +143,67 @@
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Viraj Parimi</a></li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/publications/">Publications</a></li>
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/publications/"
+                 >
+                Publications
+              </a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/theses/">Theses</a></li>
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/theses/"
+                 >
+                Theses
+              </a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/portfolio/">Projects</a></li>
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/portfolio/"
+                 >
+                Projects
+              </a>
+            </li>
           
-            <li class="masthead__menu-item"><a href="https://viraj96.github.io/old">Old</a></li>
-            <li class="masthead__menu-item"><a href="https://viraj96.github.io/files/cv.pdf">CV</a></li>
+            
+            
+            
+            <li class="masthead__menu-item">
+              <a href="https://virajparimi.github.io/old"
+                 target="_blank" rel="noopener">
+                Old
+              </a>
+            </li>
+          
+            
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/files/Viraj-Parimi-Resume.pdf"
+                 target="_blank" rel="noopener">
+                Resume
+              </a>
+            </li>
+          
+            
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/files/Viraj-Parimi-CV.pdf"
+                 target="_blank" rel="noopener">
+                CV
+              </a>
+            </li>
+          
+            <!-- <li class="masthead__menu-item"><a href="/old">Old</a></li>
+            <li class="masthead__menu-item"><a href="/files/cv.pdf">CV</a></li> -->
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
@@ -216,16 +257,14 @@
       
       
       
-        <li><a href="https://www.linkedin.com/in/https://www.linkedin.com/in/virajparimi/"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/virajparimi"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
       
       
       
       
       
       
-        <li><a href="https://github.com/viraj96"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
-      
-      
+        <li><a href="https://github.com/virajparimi"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
       
       
       
@@ -234,11 +273,15 @@
       
       
       
+        <li><a href="https://www.youtube.com/@vparimi"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a></li>
       
       
       
       
-        <li><a href="https://scholar.google.com/citations?user=Uj2A2ywAAAAJ&hl=envs"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+      
+      
+      
+        <li><a href="https://scholar.google.com/citations?user=Uj2A2ywAAAAJ&hl=en"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
       
       
       
@@ -256,7 +299,7 @@
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="T-HTN: Timeline based HTN Planning for Multiple Robots">
-    <meta itemprop="description" content="Effective coordinated actions by a team of robots operating in close proximity to one another is an important requirement in many emerging applications, ranging from warehousing and material movement to the conduct of autonomous house-keeping and maintenance of deep space habitats during unmanned periods. Yet, such multi-robot planning problems remain a significant challenge for contemporary planning technologies, due to several complicating factors: goals must be assigned to robots and accomplished over time in the presence of complex temporal and spatial constraints in a manner that optimizes overall team performance, attention must be given to the durational uncertainty inherent in robot task execution, and planning must be responsive to changing and unexpected execution circumstances. In this paper, we present T-HTN, a novel planner that attempts to overcome this challenge by coupling the structure and efficiency of Hierarchical Task Network (HTN) models with the flexible scheduling infrastructure of timeline-based planning systems. We present initial results on a simple set of multi-robot problems that show the potential of T-HTN in comparison to a state-of-the-art PDDL-style temporal planner.">
+    <meta itemprop="description" content="T-HTN threads HTN structure with flexible timelines so multi-robot teams honor temporal deadlines, shared resources, and unexpected execution delays while keeping plans tractable.">
     <meta itemprop="datePublished" content="June 13, 2022">
     
 
@@ -269,23 +312,70 @@
         
         
         
-          <p>Published in <i>ICAPS | Hierarchical Planning</i>, 2022 </p>
+          
+            <p>Published in, <i>ICAPS | Workshop on Hierarchical Planning</i>, 2022 </p>
+          
+        
+
         
         
              
         
-    
+
         </header>
       
 
+      
+        
+        
+        <figure class="page__lead-media">
+          <img src="http://localhost:4000/images/Timeline.svg" alt="Multi-robot planning illustration" loading="lazy">
+          
+        </figure>
+      
+
       <section class="page__content" itemprop="text">
-        <p>Effective coordinated actions by a team of robots operating in close proximity to one another is an important requirement in many emerging applications, ranging from warehousing and material movement to the conduct of autonomous house-keeping and maintenance of deep space habitats during unmanned periods. Yet, such multi-robot planning problems remain a significant challenge for contemporary planning technologies, due to several complicating factors: goals must be assigned to robots and accomplished over time in the presence of complex temporal and spatial constraints in a manner that optimizes overall team performance, attention must be given to the durational uncertainty inherent in robot task execution, and planning must be responsive to changing and unexpected execution circumstances. In this paper, we present T-HTN, a novel planner that attempts to overcome this challenge by coupling the structure and efficiency of Hierarchical Task Network (HTN) models with the flexible scheduling infrastructure of timeline-based planning systems. We present initial results on a simple set of multi-robot problems that show the potential of T-HTN in comparison to a state-of-the-art PDDL-style temporal planner.</p>
+        
+        <p>T-HTN threads HTN structure with flexible timelines so multi-robot teams honor temporal deadlines, shared resources, and unexpected execution delays while keeping plans tractable.</p>
 
-<p><a href="https://viraj96.github.io/files/paper5.pdf">[Paper]</a>
-<a href="https://viraj96.github.io/files/poster1.pptx">[Poster]</a>
-<a href="https://viraj96.github.io/files/slides1.pptx">[Slides]</a>
-<a href="https://www.youtube.com/watch?v=eGNyj5lOrXY">[Video]</a></p>
+        
+          <details class="page__abstract">
+            <summary class="page__abstract-summary">
+              <span class="page__abstract-title">Abstract</span>
+              <span class="page__abstract-indicator" aria-hidden="true"></span>
+            </summary>
+            <div class="page__abstract-body">
+              <p>Effective coordinated actions by a team of robots operating in close proximity to one another is an important requirement in many emerging applications, ranging from warehousing and material movement to the conduct of autonomous housekeeping and maintenance of deep space habitats during unmanned periods.  Yet, such multi-robot planning problems remain a significant challenge for contemporary planning technologies, due to several complicating factors: goals must be assigned to robots and accomplished over time in the presence of complex temporal and spatial constraints in a manner that optimizes overall team performance, attention must be given to the durational uncertainty inherent in robot task execution, and planning must be responsive to changing and unexpected execution circumstances. In this paper, we present T-HTN, a novel planner that attempts to overcome this challenge by coupling the structure and efficiency of Hierarchical Task Network (HTN) models with the flexible scheduling infrastructure of timeline-based planning systems. We present initial results on a simple set of multi-robot problems that show the potential of T-HTN in comparison to a state-of-the-art PDDL-style temporal planner.</p>
 
+            </div>
+          </details>
+        
+        
+          <details class="page__bibtex">
+            <summary class="page__bibtex-summary">
+              <span class="page__bibtex-title">BibTeX</span>
+              <span class="page__bibtex-indicator" aria-hidden="true"></span>
+            </summary>
+            <div class="page__bibtex-body">
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+<figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">parimi2022t</span><span class="p">,</span>
+<span class="na">title</span><span class="p">=</span><span class="s">{T-htn: Timeline based htn planning for multiple robots}</span><span class="p">,</span>
+<span class="na">author</span><span class="p">=</span><span class="s">{Parimi, Viraj and Rubinstein, Zachary B and Smith, Stephen F}</span>
+<span class="p">}</span></code></pre></figure>
+
+            </div>
+          </details>
+        
         
       </section>
 
@@ -307,7 +397,7 @@
 
   <nav class="pagination">
     
-      <a href="http://localhost:4000/publication/2021-08-19-on-the-vulnerability-of-community-structure-in-complex-networks" class="pagination--pager" title="On the Vulnerability of Community Structure in Complex Networks
+      <a href="http://localhost:4000/publication/2022-01-01-computationally-scalable-bayesian-sequential-learning-framework-for-time-series-forecasting" class="pagination--pager" title="A Computationally Scalable Bayesian Sequential Learning Framework for Time-Series Forecasting
 ">Previous</a>
     
     
@@ -329,27 +419,26 @@
     <div class="page__footer">
       <footer>
         <!-- start custom footer snippets -->
-<a href="/sitemap/">Sitemap</a>
 <!-- end custom footer snippets -->
 
         
 
 <div class="page__footer-follow">
-  <ul class="social-icons">
-    
-      <li><strong>Follow:</strong></li>
-    
-    
-    
-    
-      <li><a href="http://github.com/viraj96"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    
-    
-    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
-  </ul>
+  <div class="page__footer-follow-inner">
+    <ul class="social-icons">
+      
+      
+      
+      
+        <li><a href="http://github.com/virajparimi"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+      
+      
+    </ul>
+    <div class="page__footer-updated">Last updated: October 23, 2025</div>
+  </div>
 </div>
 
-<div class="page__footer-copyright">&copy; 2024 Viraj Parimi. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2025 Viraj Parimi. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -368,7 +457,6 @@
   ga('create', 'UA-110955894-1', 'auto');
   ga('send', 'pageview');
 </script>
-
 
 
 

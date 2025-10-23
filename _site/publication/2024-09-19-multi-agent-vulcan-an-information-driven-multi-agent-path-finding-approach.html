@@ -37,7 +37,7 @@
 
 
 
-  <meta property="og:description" content="Scientists often search for phenomenon of interest while exploring new environments. Autonomous vehicles are deployed to explore such areas where human-operated vehicles would be costly or dangerous. Online control of autonomous vehicles for information-gathering is called adaptive sampling and can be framed as a Partially Observable Markov Decision Process (POMDPs) that uses information gain as its principal objective. While prior work focuses largely on single-agent scenarios, this paper confronts challenges unique to multi-agent adaptive sampling, such as avoiding redundant observations, preventing vehicle collision, and facilitating path planning under limited communication. We start with Multi-Agent Path Finding (MAPF) methods, which address collision avoidance by decomposing the multi-agent path planning problem into a series of single-agent path planning problems. We present an extension to these methods called information-driven MAPF which addresses multi-agent information gain under limited communication. First, we introduce an admissible heuristic that relaxes mutual information gain to an additive function that can be evaluated as a set of independent single agent path planning problems. Second, we extend our approach to a distributed system that is robust to limited communication. When all agents are in range, the group plans jointly to maximize information. When some agents move out of range, communicating subgroups are formed and the subgroups plan independently. Since redundant observations are less likely when vehicles are far apart, this approach only incurs a small loss in information gain, resulting in an approach that gracefully transitions from full to partial communication. We evaluate our method against other adaptive sampling strategies across various scenarios, including real-world robotic applications. Our method was able to locate up to 200% more unique phenomena in certain scenarios, and each agent located its first unique phenomenon faster by up to 50%.">
+  <meta property="og:description" content="We introduce admissible information heuristics and a communication-aware decomposition strategy so teams seamlessly move between centralized and decentralized planning regimes.">
 
 
 
@@ -100,22 +100,12 @@
 
 <!-- start custom head snippets -->
 
-<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon.ico" sizes="32x32">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/android.ico" sizes="192x192">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon.ico" sizes="96x96">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon.ico" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon.ico" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon.ico" sizes="16x16">
 <link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
 <link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
-<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
 <meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
@@ -153,16 +143,67 @@
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Viraj Parimi</a></li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/publications/">Publications</a></li>
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/publications/"
+                 >
+                Publications
+              </a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/theses/">Theses</a></li>
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/theses/"
+                 >
+                Theses
+              </a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/portfolio/">Projects</a></li>
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/portfolio/"
+                 >
+                Projects
+              </a>
+            </li>
           
-            <li class="masthead__menu-item"><a href="https://viraj96.github.io/old">Old</a></li>
-            <li class="masthead__menu-item"><a href="https://viraj96.github.io/files/cv.pdf">CV</a></li>
+            
+            
+            
+            <li class="masthead__menu-item">
+              <a href="https://virajparimi.github.io/old"
+                 target="_blank" rel="noopener">
+                Old
+              </a>
+            </li>
+          
+            
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/files/Viraj-Parimi-Resume.pdf"
+                 target="_blank" rel="noopener">
+                Resume
+              </a>
+            </li>
+          
+            
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/files/Viraj-Parimi-CV.pdf"
+                 target="_blank" rel="noopener">
+                CV
+              </a>
+            </li>
+          
+            <!-- <li class="masthead__menu-item"><a href="/old">Old</a></li>
+            <li class="masthead__menu-item"><a href="/files/cv.pdf">CV</a></li> -->
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
@@ -216,16 +257,14 @@
       
       
       
-        <li><a href="https://www.linkedin.com/in/https://www.linkedin.com/in/virajparimi/"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/virajparimi"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
       
       
       
       
       
       
-        <li><a href="https://github.com/viraj96"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
-      
-      
+        <li><a href="https://github.com/virajparimi"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
       
       
       
@@ -234,11 +273,15 @@
       
       
       
+        <li><a href="https://www.youtube.com/@vparimi"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a></li>
       
       
       
       
-        <li><a href="https://scholar.google.com/citations?user=Uj2A2ywAAAAJ&hl=envs"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+      
+      
+      
+        <li><a href="https://scholar.google.com/citations?user=Uj2A2ywAAAAJ&hl=en"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
       
       
       
@@ -256,7 +299,7 @@
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Multi-Agent Vulcan: An Information-Driven Multi-Agent Path Finding Approach">
-    <meta itemprop="description" content="Scientists often search for phenomenon of interest while exploring new environments. Autonomous vehicles are deployed to explore such areas where human-operated vehicles would be costly or dangerous. Online control of autonomous vehicles for information-gathering is called adaptive sampling and can be framed as a Partially Observable Markov Decision Process (POMDPs) that uses information gain as its principal objective. While prior work focuses largely on single-agent scenarios, this paper confronts challenges unique to multi-agent adaptive sampling, such as avoiding redundant observations, preventing vehicle collision, and facilitating path planning under limited communication. We start with Multi-Agent Path Finding (MAPF) methods, which address collision avoidance by decomposing the multi-agent path planning problem into a series of single-agent path planning problems. We present an extension to these methods called information-driven MAPF which addresses multi-agent information gain under limited communication. First, we introduce an admissible heuristic that relaxes mutual information gain to an additive function that can be evaluated as a set of independent single agent path planning problems. Second, we extend our approach to a distributed system that is robust to limited communication. When all agents are in range, the group plans jointly to maximize information. When some agents move out of range, communicating subgroups are formed and the subgroups plan independently. Since redundant observations are less likely when vehicles are far apart, this approach only incurs a small loss in information gain, resulting in an approach that gracefully transitions from full to partial communication. We evaluate our method against other adaptive sampling strategies across various scenarios, including real-world robotic applications. Our method was able to locate up to 200% more unique phenomena in certain scenarios, and each agent located its first unique phenomenon faster by up to 50%.">
+    <meta itemprop="description" content="We introduce admissible information heuristics and a communication-aware decomposition strategy so teams seamlessly move between centralized and decentralized planning regimes.">
     <meta itemprop="datePublished" content="September 19, 2024">
     
 
@@ -269,21 +312,88 @@
         
         
         
-          <p>Published in <i>IROS | Oral Pitch</i>, 2024 </p>
+          
+            <p>Published in, <i>IROS</i>, 2024 </p>
+          
+        
+
         
         
              
         
-    
+
         </header>
       
 
+      
+        
+        
+        <figure class="page__lead-media">
+          <img src="http://localhost:4000/images/Info_MAPF.gif" alt="Information-driven multi-agent planning" loading="lazy">
+          
+        </figure>
+      
+
       <section class="page__content" itemprop="text">
-        <p>Scientists often search for phenomenon of interest while exploring new environments. Autonomous vehicles are deployed to explore such areas where human-operated vehicles would be costly or dangerous. Online control of autonomous vehicles for information-gathering is called adaptive sampling and can be framed as a Partially Observable Markov Decision Process (POMDPs) that uses information gain as its principal objective. While prior work focuses largely on single-agent scenarios, this paper confronts challenges unique to multi-agent adaptive sampling, such as avoiding redundant observations, preventing vehicle collision, and facilitating path planning under limited communication. We start with Multi-Agent Path Finding (MAPF) methods, which address collision avoidance by decomposing the multi-agent path planning problem into a series of single-agent path planning problems. We present an extension to these methods called information-driven MAPF which addresses multi-agent information gain under limited communication. First, we introduce an admissible heuristic that relaxes mutual information gain to an additive function that can be evaluated as a set of independent single agent path planning problems. Second, we extend our approach to a distributed system that is robust to limited communication. When all agents are in range, the group plans jointly to maximize information. When some agents move out of range, communicating subgroups are formed and the subgroups plan independently. Since redundant observations are less likely when vehicles are far apart, this approach only incurs a small loss in information gain, resulting in an approach that gracefully transitions from full to partial communication. We evaluate our method against other adaptive sampling strategies across various scenarios, including real-world robotic applications. Our method was able to locate up to 200% more unique phenomena in certain scenarios, and each agent located its first unique phenomenon faster by up to 50%.</p>
+        
+          <div class="page__project-links">
+            <span class="page__project-label"><i class="fa fa-globe" aria-hidden="true"></i> Project:</span>
+            <div class="page__project-links-list">
+              
+                
+                
+                <a href="https://info-mapf-mers.csail.mit.edu/" target="_blank" rel="noopener">Project Site</a>
+              
+            </div>
+          </div>
+        
+        <p>We introduce admissible information heuristics and a communication-aware decomposition strategy so teams seamlessly move between centralized and decentralized planning regimes.</p>
 
-<p><a href="https://viraj96.github.io/files/paper8.pdf">[Paper]</a>
-<a href="https://info-mapf-mers.csail.mit.edu/">[Website]</a></p>
+        
+          <details class="page__abstract">
+            <summary class="page__abstract-summary">
+              <span class="page__abstract-title">Abstract</span>
+              <span class="page__abstract-indicator" aria-hidden="true"></span>
+            </summary>
+            <div class="page__abstract-body">
+              <p>Scientists often search for phenomenon of interest while exploring new environments. Autonomous vehicles are deployed to explore such areas where human-operated vehicles would be costly or dangerous. Online control of autonomous vehicles for information-gathering is called adaptive sampling and can be framed as a Partially Observable Markov Decision Process (POMDPs) that uses information gain as its principal objective. While prior work focuses largely on single-agent scenarios, this paper confronts challenges unique to multi-agent adaptive sampling, such as avoiding redundant observations, preventing vehicle collision, and facilitating path planning under limited communication. We start with Multi-Agent Path Finding (MAPF) methods, which address collision avoidance by decomposing the multi-agent path planning problem into a series of single-agent path planning problems. We present an extension to these methods called information-driven MAPF which addresses multi-agent information gain under limited communication. First, we introduce an admissible heuristic that relaxes mutual information gain to an additive function that can be evaluated as a set of independent single agent path planning problems. Second, we extend our approach to a distributed system that is robust to limited communication. When all agents are in range, the group plans jointly to maximize information. When some agents move out of range, communicating subgroups are formed and the subgroups plan independently. Since redundant observations are less likely when vehicles are far apart, this approach only incurs a small loss in information gain, resulting in an approach that gracefully transitions from full to partial communication. We evaluate our method against other adaptive sampling strategies across various scenarios, including real-world robotic applications. Our method was able to locate up to 200% more unique phenomena in certain scenarios, and each agent located its first unique phenomenon faster by up to 50%.</p>
 
+            </div>
+          </details>
+        
+        
+          <details class="page__bibtex">
+            <summary class="page__bibtex-summary">
+              <span class="page__bibtex-title">BibTeX</span>
+              <span class="page__bibtex-indicator" aria-hidden="true"></span>
+            </summary>
+            <div class="page__bibtex-body">
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+<figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@INPROCEEDINGS</span><span class="p">{</span><span class="nl">10801571</span><span class="p">,</span>
+<span class="na">author</span><span class="p">=</span><span class="s">{Olkin, Jake and Parimi, Viraj and Williams, Brian}</span><span class="p">,</span>
+<span class="na">booktitle</span><span class="p">=</span><span class="s">{2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}</span><span class="p">,</span> 
+<span class="na">title</span><span class="p">=</span><span class="s">{Multi-Agent Vulcan: An Information-Driven Multi-Agent Path Finding Approach}</span><span class="p">,</span> 
+<span class="na">year</span><span class="p">=</span><span class="s">{2024}</span><span class="p">,</span>
+<span class="na">volume</span><span class="p">=</span><span class="s">{}</span><span class="p">,</span>
+<span class="na">number</span><span class="p">=</span><span class="s">{}</span><span class="p">,</span>
+<span class="na">pages</span><span class="p">=</span><span class="s">{10253-10259}</span><span class="p">,</span>
+<span class="na">keywords</span><span class="p">=</span><span class="s">{Additives;Markov decision processes;Path planning;Collision avoidance;Autonomous vehicles;Mutual information;Intelligent robots}</span><span class="p">,</span>
+<span class="na">doi</span><span class="p">=</span><span class="s">{10.1109/IROS58592.2024.10801571}</span>
+<span class="p">}</span></code></pre></figure>
+
+            </div>
+          </details>
+        
         
       </section>
 
@@ -327,27 +437,26 @@
     <div class="page__footer">
       <footer>
         <!-- start custom footer snippets -->
-<a href="/sitemap/">Sitemap</a>
 <!-- end custom footer snippets -->
 
         
 
 <div class="page__footer-follow">
-  <ul class="social-icons">
-    
-      <li><strong>Follow:</strong></li>
-    
-    
-    
-    
-      <li><a href="http://github.com/viraj96"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    
-    
-    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
-  </ul>
+  <div class="page__footer-follow-inner">
+    <ul class="social-icons">
+      
+      
+      
+      
+        <li><a href="http://github.com/virajparimi"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+      
+      
+    </ul>
+    <div class="page__footer-updated">Last updated: October 23, 2025</div>
+  </div>
 </div>
 
-<div class="page__footer-copyright">&copy; 2024 Viraj Parimi. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2025 Viraj Parimi. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -366,7 +475,6 @@
   ga('create', 'UA-110955894-1', 'auto');
   ga('send', 'pageview');
 </script>
-
 
 
 

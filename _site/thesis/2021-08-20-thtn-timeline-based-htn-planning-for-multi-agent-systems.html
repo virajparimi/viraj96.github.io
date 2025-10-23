@@ -37,7 +37,7 @@
 
 
 
-  <meta property="og:description" content="Planning in mission-critical systems like deep-space habitats with onboard robotic systems must be robust to unforeseen circumstances. Such systems are expected to complete a set of goals with different deadlines each day for routine maintenance while also accounting for emergencies. With the presence of humans within the habitat, the robotic systems can be required to perform specific tasks while possibly collaborating with the humans. Further, since the habitat can support multiple robots, this becomes a source of contention as they have to share the limited set of onboard resources. This dynamic between the humans, robots, and the habitat generates a complex system where failures at any level can cause significant delays leading to temporal uncertainty. Such delays can have huge implications depending on whether or not the delay causes the system to miss a goal’s deadline. Hence, it becomes crucial for the planner to address the overall schedule within the context of the current temporal deadlines of the goals and the resource constraints within the environment. Assuming a known map of the environment and a fixed horizon time, one can develop a schedule for the robotic systems that accounts for such temporal uncertainty and resource constraints by leveraging the timeline-based planning framework. To this end, this thesis proposes T-HTN, a novel planner that extends the Hierarchical Task Networks (HTN) model by incorporating temporal reasoning via flexible timeline structures to produce plans that respect the goal’s deadlines and the complex resource constraints introduced in multi-robot scenarios. T-HTN is a robust extension to a timeline-based planner whose efficacy has been tested on multiple example scenarios within a simulation environment.">
+  <meta property="og:description" content="T-HTN extends hierarchical task networks with timeline-based temporal reasoning to plan robust schedules for multiple robots in deep-space habitats, making sure resource-sharing tasks still meet deadlines even under unexpected delays.">
 
 
 
@@ -100,22 +100,12 @@
 
 <!-- start custom head snippets -->
 
-<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon.ico" sizes="32x32">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/android.ico" sizes="192x192">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon.ico" sizes="96x96">
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon.ico" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon.ico" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon.ico" sizes="16x16">
 <link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
 <link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
-<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
 <meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
@@ -153,16 +143,67 @@
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Viraj Parimi</a></li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/publications/">Publications</a></li>
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/publications/"
+                 >
+                Publications
+              </a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/theses/">Theses</a></li>
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/theses/"
+                 >
+                Theses
+              </a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/portfolio/">Projects</a></li>
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/portfolio/"
+                 >
+                Projects
+              </a>
+            </li>
           
-            <li class="masthead__menu-item"><a href="https://viraj96.github.io/old">Old</a></li>
-            <li class="masthead__menu-item"><a href="https://viraj96.github.io/files/cv.pdf">CV</a></li>
+            
+            
+            
+            <li class="masthead__menu-item">
+              <a href="https://virajparimi.github.io/old"
+                 target="_blank" rel="noopener">
+                Old
+              </a>
+            </li>
+          
+            
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/files/Viraj-Parimi-Resume.pdf"
+                 target="_blank" rel="noopener">
+                Resume
+              </a>
+            </li>
+          
+            
+            
+            
+            <li class="masthead__menu-item">
+              <a href="/files/Viraj-Parimi-CV.pdf"
+                 target="_blank" rel="noopener">
+                CV
+              </a>
+            </li>
+          
+            <!-- <li class="masthead__menu-item"><a href="/old">Old</a></li>
+            <li class="masthead__menu-item"><a href="/files/cv.pdf">CV</a></li> -->
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
@@ -216,16 +257,14 @@
       
       
       
-        <li><a href="https://www.linkedin.com/in/https://www.linkedin.com/in/virajparimi/"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/virajparimi"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
       
       
       
       
       
       
-        <li><a href="https://github.com/viraj96"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
-      
-      
+        <li><a href="https://github.com/virajparimi"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
       
       
       
@@ -234,11 +273,15 @@
       
       
       
+        <li><a href="https://www.youtube.com/@vparimi"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a></li>
       
       
       
       
-        <li><a href="https://scholar.google.com/citations?user=Uj2A2ywAAAAJ&hl=envs"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+      
+      
+      
+        <li><a href="https://scholar.google.com/citations?user=Uj2A2ywAAAAJ&hl=en"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
       
       
       
@@ -256,7 +299,7 @@
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="T-HTN: Timeline based HTN Planning for Multi-Agent Systems">
-    <meta itemprop="description" content="Planning in mission-critical systems like deep-space habitats with onboard robotic systems must be robust to unforeseen circumstances. Such systems are expected to complete a set of goals with different deadlines each day for routine maintenance while also accounting for emergencies. With the presence of humans within the habitat, the robotic systems can be required to perform specific tasks while possibly collaborating with the humans. Further, since the habitat can support multiple robots, this becomes a source of contention as they have to share the limited set of onboard resources. This dynamic between the humans, robots, and the habitat generates a complex system where failures at any level can cause significant delays leading to temporal uncertainty. Such delays can have huge implications depending on whether or not the delay causes the system to miss a goal’s deadline. Hence, it becomes crucial for the planner to address the overall schedule within the context of the current temporal deadlines of the goals and the resource constraints within the environment. Assuming a known map of the environment and a fixed horizon time, one can develop a schedule for the robotic systems that accounts for such temporal uncertainty and resource constraints by leveraging the timeline-based planning framework. To this end, this thesis proposes T-HTN, a novel planner that extends the Hierarchical Task Networks (HTN) model by incorporating temporal reasoning via flexible timeline structures to produce plans that respect the goal’s deadlines and the complex resource constraints introduced in multi-robot scenarios. T-HTN is a robust extension to a timeline-based planner whose efficacy has been tested on multiple example scenarios within a simulation environment.">
+    <meta itemprop="description" content="T-HTN extends hierarchical task networks with timeline-based temporal reasoning to plan robust schedules for multiple robots in deep-space habitats, making sure resource-sharing tasks still meet deadlines even under unexpected delays.">
     <meta itemprop="datePublished" content="August 20, 2021">
     
 
@@ -269,20 +312,72 @@
         
         
         
-          <p>Published in <i>Masters Thesis | Carnegie Mellon University</i>, 2021 </p>
+          
+            <p>Published in, <i>Masters Thesis | Carnegie Mellon University</i>, 2021 </p>
+          
+        
+
         
         
              
         
-    
+
         </header>
       
 
+      
+        
+        
+        <figure class="page__lead-media">
+          <img src="http://localhost:4000/images/THTN.png" alt="Multi-robot planning illustration" loading="lazy">
+          
+        </figure>
+      
+
       <section class="page__content" itemprop="text">
-        <p>Planning in mission-critical systems like deep-space habitats with onboard robotic systems must be robust to unforeseen circumstances. Such systems are expected to complete a set of goals with different deadlines each day for routine maintenance while also accounting for emergencies. With the presence of humans within the habitat, the robotic systems can be required to perform specific tasks while possibly collaborating with the humans. Further, since the habitat can support multiple robots, this becomes a source of contention as they have to share the limited set of onboard resources. This dynamic between the humans, robots, and the habitat generates a complex system where failures at any level can cause significant delays leading to temporal uncertainty. Such delays can have huge implications depending on whether or not the delay causes the system to miss a goal’s deadline. Hence, it becomes crucial for the planner to address the overall schedule within the context of the current temporal deadlines of the goals and the resource constraints within the environment. Assuming a known map of the environment and a fixed horizon time, one can develop a schedule for the robotic systems that accounts for such temporal uncertainty and resource constraints by leveraging the timeline-based planning framework. To this end, this thesis proposes T-HTN, a novel planner that extends the Hierarchical Task Networks (HTN) model by incorporating temporal reasoning via flexible timeline structures to produce plans that respect the goal’s deadlines and the complex resource constraints introduced in multi-robot scenarios. T-HTN is a robust extension to a timeline-based planner whose efficacy has been tested on multiple example scenarios within a simulation environment.</p>
+        
+        <p>T-HTN extends hierarchical task networks with timeline-based temporal reasoning to plan robust schedules for multiple robots in deep-space habitats, making sure resource-sharing tasks still meet deadlines even under unexpected delays.</p>
 
-<p><a href="https://viraj96.github.io/files/paper4.pdf">[Paper]</a></p>
+        
+          <details class="page__abstract">
+            <summary class="page__abstract-summary">
+              <span class="page__abstract-title">Abstract</span>
+              <span class="page__abstract-indicator" aria-hidden="true"></span>
+            </summary>
+            <div class="page__abstract-body">
+              <p>Planning in mission-critical systems like deep-space habitats with onboard robotic systems must be robust to unforeseen circumstances. Such systems are expected to complete a set of goals with different deadlines each day for routine maintenance while also accounting for emergencies. With the presence of humans within the habitat, the robotic systems can be required to perform specific tasks while possibly collaborating with the humans. Further, since the habitat can support multiple robots, this becomes a source of contention as they have to share the limited set of onboard resources. This dynamic between the humans, robots, and the habitat generates a complex system where failures at any level can cause significant delays leading to temporal uncertainty. Such delays can have huge implications depending on whether or not the delay causes the system to miss a goal’s deadline. Hence, it becomes crucial for the planner to address the overall schedule within the context of the current temporal deadlines of the goals and the resource constraints within the environment. Assuming a known map of the environment and a fixed horizon time, one can develop a schedule for the robotic systems that accounts for such temporal uncertainty and resource constraints by leveraging the timeline-based planning framework. To this end, this thesis proposes T-HTN, a novel planner that extends the Hierarchical Task Networks (HTN) model by incorporating temporal reasoning via flexible timeline structures to produce plans that respect the goal’s deadlines and the complex resource constraints introduced in multi-robot scenarios. T-HTN is a robust extension to a timeline-based planner whose efficacy has been tested on multiple example scenarios within a simulation environment.</p>
 
+            </div>
+          </details>
+        
+        
+          <details class="page__bibtex">
+            <summary class="page__bibtex-summary">
+              <span class="page__bibtex-title">BibTeX</span>
+              <span class="page__bibtex-indicator" aria-hidden="true"></span>
+            </summary>
+            <div class="page__bibtex-body">
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+<figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@phdthesis</span><span class="p">{</span><span class="nl">parimi2021t</span><span class="p">,</span>
+<span class="na">title</span><span class="p">=</span><span class="s">{T-HTN: Timeline based HTN Planning for Multi-Agent Systems}</span><span class="p">,</span>
+<span class="na">author</span><span class="p">=</span><span class="s">{Parimi, Viraj}</span><span class="p">,</span>
+<span class="na">year</span><span class="p">=</span><span class="s">{2021}</span><span class="p">,</span>
+<span class="na">school</span><span class="p">=</span><span class="s">{Carnegie Mellon University Pittsburgh, PA}</span>
+<span class="p">}</span></code></pre></figure>
+
+            </div>
+          </details>
+        
         
       </section>
 
@@ -315,27 +410,26 @@
     <div class="page__footer">
       <footer>
         <!-- start custom footer snippets -->
-<a href="/sitemap/">Sitemap</a>
 <!-- end custom footer snippets -->
 
         
 
 <div class="page__footer-follow">
-  <ul class="social-icons">
-    
-      <li><strong>Follow:</strong></li>
-    
-    
-    
-    
-      <li><a href="http://github.com/viraj96"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    
-    
-    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
-  </ul>
+  <div class="page__footer-follow-inner">
+    <ul class="social-icons">
+      
+      
+      
+      
+        <li><a href="http://github.com/virajparimi"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+      
+      
+    </ul>
+    <div class="page__footer-updated">Last updated: October 23, 2025</div>
+  </div>
 </div>
 
-<div class="page__footer-copyright">&copy; 2024 Viraj Parimi. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2025 Viraj Parimi. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -354,7 +448,6 @@
   ga('create', 'UA-110955894-1', 'auto');
   ga('send', 'pageview');
 </script>
-
 
 
 
