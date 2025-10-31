@@ -35,17 +35,20 @@ layout: default
         {% endif %}
         
         {% if page.collection == 'teaching' %}
-          <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+          {% assign venue_text = page.venue | replace: '(Oral)', '(<strong>Oral</strong>)' %}
+          <p> {{ page.type }}, <i>{{ venue_text }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.venue and page.date %}
           {% if page.venue.first %}
             <p> Published in, </p> 
             <div style="padding-left: 20px; margin-top: -20px; margin-bottom: 20px;">
               {% for venue in page.venue %}
-                <i>{{ venue }}, {{ page.date | default: "1900-01-01" | date: "%Y" }}</i>{% if forloop.last == false %}<br> {% endif %}
+                {% assign venue_text = venue | replace: '(Oral)', '(<strong>Oral</strong>)' %}
+                <i>{{ venue_text }}, {{ page.date | default: "1900-01-01" | date: "%Y" }}</i>{% if forloop.last == false %}<br> {% endif %}
               {% endfor %}  
             </div>
           {% else %}
-            <p>Published in, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+            {% assign venue_text = page.venue | replace: '(Oral)', '(<strong>Oral</strong>)' %}
+            <p>Published in, <i>{{ venue_text }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
           {% endif %}
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
@@ -54,7 +57,8 @@ layout: default
         {% if page.also_in %}
           <p class="page__also-in">Also presented at
             {% for extra in page.also_in %}
-              {% if forloop.first == false %}; {% endif %}<i>{{ extra }}</i>
+              {% assign extra_text = extra | replace: '(Oral)', '(<strong>Oral</strong>)' %}
+              {% if forloop.first == false %}; {% endif %}<i>{{ extra_text }}</i>
             {% endfor %}
           </p>
         {% endif %}
